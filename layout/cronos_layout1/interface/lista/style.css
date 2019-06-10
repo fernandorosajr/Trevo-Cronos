@@ -1,0 +1,1218 @@
+.list_area {
+  width: 270px;
+  height: 429px;
+  overflow: auto;
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: inherit;
+  box-sizing: border-box;
+  background: #eee;
+  background-size: auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+  align-content: stretch;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.list_area:hover {
+}
+
+.list_area:active {
+}
+
+.list_area:focus {
+}
+
+.label_list_item {
+  width: auto;
+  height: 25px;
+  overflow: visible;
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: inherit;
+  box-sizing: border-box;
+  background: rgba(255,255,255,0.5);
+  background-size: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.label_list_item:hover {
+}
+
+.label_list_item:active {
+}
+
+.label_list_item:focus {
+}
+
+.txt_list_item {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: inherit;
+  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.txt_list_item:hover {
+}
+
+.txt_list_item:active {
+}
+
+.txt_list_item:focus {
+}
+
+.ico_play {
+  width: 18px;
+  height: 18px;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: pointer;
+  box-sizing: border-box;
+  background: url() center center no-repeat;
+  background-size: contain;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  margin-top: 0px;
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 15px 15px 15px 15px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: center;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.ico_play:hover {
+  box-shadow: 1px 1px 5px -1px #000000;
+  border-radius: 24px 24px 24px 24px
+}
+
+.ico_play:active {
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(0) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(0) contrast(1) opacity(1) hue-rotate(0deg)
+}
+
+.ico_play:focus {
+}
+
+.txt_item {
+  width: auto;
+  height: 18px;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: inherit;
+  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: ellipsis;
+  white-space: inherit
+}
+
+.txt_item:hover {
+}
+
+.txt_item:active {
+}
+
+.txt_item:focus {
+}
+
+.item_status {
+  width: auto;
+  height: 18px;
+  overflow: visible;
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: inherit;
+  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.item_status:hover {
+}
+
+.item_status:active {
+}
+
+.item_status:focus {
+}
+
+.toolbar {
+  width: auto;
+  height: 22px;
+  overflow: visible;
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: inherit;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(180deg, #eee, rgba(255,255,255,0.6));
+  background: linear-gradient(270deg, #eee, rgba(255,255,255,0.6));
+  background-size: auto;
+  box-shadow: 0px -1px 8px -4px #000000;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  padding-bottom: 2px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: auto;
+  left: 0px;
+  right: 0px;
+  bottom: auto;
+  position: absolute;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.toolbar:hover {
+}
+
+.toolbar:active {
+}
+
+.toolbar:focus {
+}
+
+.area {
+  width: 270px;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: inherit;
+  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.area:hover {
+}
+
+.area:active {
+}
+
+.area:focus {
+}
+
+.list_item {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: inherit;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(180deg, #eee, rgba(255,255,255,0.6));
+  background: linear-gradient(270deg, #eee, rgba(255,255,255,0.6));
+  background-size: auto;
+  box-shadow: 0px 0px 24px 0px #000000 inset;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 1px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.list_item:hover {
+}
+
+.list_item:active {
+}
+
+.list_item:focus {
+}
+
+.status_bar {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: inherit;
+  box-sizing: border-box;
+  background: #ddd;
+  background-size: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 1px;
+  padding-left: 1px;
+  padding-right: 1px;
+  padding-bottom: 1px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.status_bar:hover {
+}
+
+.status_bar:active {
+}
+
+.status_bar:focus {
+}
+
+.txt_status_bar {
+  width: auto;
+  height: 18px;
+  overflow: visible;
+  opacity: 1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: inherit;
+  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.txt_status_bar:hover {
+}
+
+.txt_status_bar:active {
+}
+
+.txt_status_bar:focus {
+}
+
+.txt_status_start {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: inherit;
+  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: 11px;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.txt_status_start:hover {
+}
+
+.txt_status_start:active {
+}
+
+.txt_status_start:focus {
+}
+
+.scrollbar {
+  width: 160px;
+  height: 18px;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: inherit;
+  box-sizing: border-box;
+  background: -webkit-linear-gradient(190deg, #00A803, #006505);
+  background: linear-gradient(260deg, #00A803, #006505);
+  background-size: auto;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: static;
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.scrollbar:hover {
+}
+
+.scrollbar:active {
+}
+
+.scrollbar:focus {
+}
+
+.txt_scrollbar {
+  width: auto;
+  height: auto;
+  overflow: visible;
+  opacity: 1;
+  display: block;
+  cursor: inherit;
+  box-sizing: border-box;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-box-align: stretch;
+  -webkit-align-items: stretch;
+  -ms-flex-align: stretch;
+  align-items: stretch;
+  -webkit-align-content: flex-start;
+  -ms-flex-line-pack: start;
+  align-content: flex-start;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 0 auto;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  top: 0px;
+  left: auto;
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  text-shadow: 1px 1px 0px rgba(255,255,255,0.6);
+  filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-filter: blur(0px) grayscale(0) sepia(0) invert(0) saturate(1) brightness(1) contrast(1) opacity(1) hue-rotate(0deg);
+  -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+  -webkit-transform-origin: 50% 50%;
+  -ms-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  border-top: 0px solid #000;
+  border-left: 0px solid #000;
+  border-right: 0px solid #000;
+  border-bottom: 0px solid #000;
+  border-radius: 0px 0px 0px 0px;
+  font-family: inherit;
+  color: #000;
+  font-size: inherit;
+  letter-spacing: 0px;
+  word-spacing: 0px;
+  line-height: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+  text-transform: inherit;
+  text-overflow: inherit;
+  white-space: inherit
+}
+
+.txt_scrollbar:hover {
+}
+
+.txt_scrollbar:active {
+}
+
+.txt_scrollbar:focus {
+} 
+body { margin: 0; }
