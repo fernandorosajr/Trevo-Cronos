@@ -22,5 +22,8 @@
   "homepage": "https://github.com/fernandorosajr/Trevo-Cronos#readme",
   "devDependencies": {
     "electron": "^5.0.3"
+  },
+  "dependencies": {
+    "xel": "0.0.203"
   }
 }
