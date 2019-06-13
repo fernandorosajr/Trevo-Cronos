@@ -1,17 +1,102 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    <h2>Seja bem vindo a Trevo Cronos</h2>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="layout/photon-0.1.2-alpha/photon-0.1.2-alpha/dist/css/photon.css" />
+
+  <link rel="stylesheet" href="node_modules/xel/themes/vanilla.css">
+  <script src="node_modules/xel/xel.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <title>Trevo Cronos</title>
+</head>
+
+<body>
+
+  <div class="window">
+
+
+    <header class="toolbar toolbar-header">
+      <div class="area_title">
+        <div class="label_title">Trevo </div>
+        <div class="label_title_2"> Cronos </div>
+      </div>
+      <h1 class="title">***</h1>
+      <div class="">
+        <input type="button" class="btn_log" value="Lougot (usu) " />
+
+        <input type="button" class="btn_log" value="Settings " />
+        <input type="button" value="Logar" class="btn_log " />
+
+
+        <button class="btn_log btn_control">
+          <span class="icon icon-minus"></span>
+
+        </button>
+
+        <button class="btn_log btn_control">
+          <span class="icon icon-plus"></span>
+
+        </button>
+
+        <button class="btn_log btn_close">
+          <span class="icon icon-cancel"></span>
+
+        </button>
+      </div>
+
+    </header>
+    <div class="window-content">
+      <div class="pane-group">
+        <!--<div class="pane-sm sidebar">...</div>-->
+
+
+
+        <div class="pane">
+          <div class="container">
+              <div class="panel_left">
+                Left
+              </div>
+              <div class="panel_center lista">
+                
+                   Aqui vai entrar o container
+            <h2>Seja bem vindo a Trevo Cronos</h2>
+            We are using Node.js <span id="node-version"></span>,
+            Chromium <span id="chrome-version"></span>,
+            and Electron <span id="electron-version"></span>.
+            <br />
+            background: -webkit-linear-gradient(90deg, #eee, #C3D0D5);
+            background: linear-gradient(0deg, #eee, #C3D0D5);
+              </div>
+              
+                <div class="panel_right">
+                    Right
+                    
+              </div>
+           
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+    <!--
+      <footer class="toolbar toolbar-footer">
+      <h1 class="title">Footer</h1>
+    </footer>
+-->
+  </div>
+
+
+
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+</body>
+
 </html>
