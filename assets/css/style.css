@@ -144,6 +144,9 @@
     background-color: transparent;
     transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
 }
+.btn_play span{
+    cursor: pointer;
+}
 
 .btn_play:hover{
     background-color: rgba(255,255,255,0.6);
@@ -221,14 +224,14 @@
 
 .progress_bar{
     background-color: forestgreen;
-    width: 55%;
+    width: 15%;
     display: block;
     box-sizing: border-box;
     background: -webkit-linear-gradient(56deg, #037502, #22b000);
     background: linear-gradient(34deg, #037502, #22b000);
     align-items: stretch;
     color: #fff;
-    text-shadow: 0px 0px 4px rgba(1,1,1,1);;    
+    text-shadow: 0px 0px 4px rgba(1,1,1,1);   
 }
 
 .display_btns{
@@ -236,10 +239,29 @@
     height: auto;
     display: flex;
     box-sizing: border-box;
-    background: rgba(246,181,181, 0.1);
     justify-content: center;
     margin-top: 15px;
-    
+}
+
+x-button.btn{
+    background-color: buttonface;
+    line-height: 20px;
+}
+
+x-button[toggled].btn{
+    box-shadow: 0px 0px 13px 0px rgba(8,84,113,0.7) inset;
+    -webkit-transition: 0.2s 0.2s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    background-color: buttonface;
+    color: rgba(8,84,113,0.7);
+    line-height: 20px;
+    /*
+    font-weight: bold;
+    font-size: 14px;
+    */
+}
+x-button.btn * {
+    cursor: pointer;
 }
 
 .btn{
@@ -253,14 +275,25 @@
     margin: 1px;
     border: 1px solid rgba(8,84,113,0.7);
     color: rgba(8,84,113,0.7);
-    line-height: 14px;
+    line-height: 17px;
     text-overflow: ellipsis;
+}
+
+.btn .icon{
+    color: rgba(8,84,113,0.7);
 }
 
 .btn:hover {
   box-shadow: 0px 0px 13px 0px rgba(8,84,113,0.7) inset;
   -webkit-transition: 0.2s 0.2s all cubic-bezier(0.25,0.1,0.25,1);
   transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.btn:active {
+  background-color:  rgba(8,84,113,0.7);
+color: white;
+  -webkit-transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+  transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .voltas{
@@ -276,7 +309,7 @@
     
 }
 
-.volta{
+x-button.volta{
     width: 16px;
     height: 16px;
     box-sizing: border-box;
@@ -284,10 +317,13 @@
     margin: 1px;
     cursor: help;
     display: block;
+    padding: 0;
+    border: none;
 }
 
 .volta:hover{
     background-color: rgba(23,190,4,0.9);
+    border: none;
 }
 
 .container divm{
