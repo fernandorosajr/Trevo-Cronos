@@ -295,6 +295,36 @@ color: white;
   -webkit-transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
   transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
+x-button.btn_config{
+    position: absolute; 
+    right: 0;
+    background-color: transparent !important;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+x-button[toggled].btn_config{
+    background: rgba(8,84,113,0.7) !important;
+    border: none;  
+     width: 30px;
+    height: 30px;
+    padding-left: 5px;
+     display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+x-button[toggled].btn_config *{
+    color: #fff !important;
+    line-height: 25px;
+    width: 15px;
+    height: 25px;
+}
 
 .voltas{
     max-width: 461px;
