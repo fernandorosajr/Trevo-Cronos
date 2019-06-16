@@ -106,11 +106,15 @@
 
 .panel_right{
     flex: 1;
-    overflow: auto;
+    overflow:visible;
     min-width: 292px;
     padding: 4px;
     padding-top: 38px;
     box-sizing: border-box;
+    display:flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
 }
 
 .panel_center{
@@ -372,6 +376,58 @@ x-button.volta{
     background-color: #eee;
     
 }
+.panel_list{
+    box-shadow: 0px 0px 2px rgba(8,84,113,0.7);
+    padding: 8px;
+    display: block !important;
+    flex: 2;
+}
+
+.panel_list {
+    width: auto;
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+    display: block;
+ 
+    box-sizing: border-box;
+    background: #2448BE;
+    padding: 8px;
+    margin: 0px;
+   
+    -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
+    
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    border: 0px solid #000;
+    border-radius: 0px 0px 0px 0px;
+  
+}
+.listbox{
+    width: auto;
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+    display: block;
+    cursor: inherit;
+    box-sizing: border-box;
+    background: rgba(238,238,238,0.3);
+    top: 29px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    position: absolute;
+    border-top: 0px solid #000;
+    border-left: 0px solid #000;
+    border-right: 0px solid #000;
+    border-bottom: 0px solid #000;
+    border-radius: 0px 0px 0px 0px;
+    font-family: inherit;
+}
+
 .txt_label{
     padding: 7px;
     margin: 4px;
@@ -387,6 +443,7 @@ x-button.volta{
     background-color: rgba(255,255,255,0.8) !important;
     transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
+
 .txt_label:focus{
     background-color: rgba(255,255,255,1) !important;
     cursor: text;
