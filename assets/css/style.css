@@ -137,15 +137,12 @@
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    border-top: 4px solid rgba(8,84,113,0.7);
-    border-left: 4px solid rgba(8,84,113,0.7);
-    border-right: 4px solid rgba(8,84,113,0.7);
-    border-bottom: 4px solid rgba(8,84,113,0.7);
-    border-radius: 109px 109px 109px 109px;
+    border: 4px solid rgba(8,84,113,0.7);
+    border-radius: 109px;
     text-align: center;
     color: rgba(8,84,113,0.7);
     font-size: 85px;
-    font-weight: bold;
+    font-weight:bold;
     padding: 0;
     background-color: transparent;
     transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
@@ -375,7 +372,26 @@ x-button.volta{
     background-color: #eee;
     
 }
+.txt_label{
+    padding: 7px;
+    margin: 4px;
+    border: 2px solid rgba(8,84,113,0.7);
+    color: rgba(8,84,113,0.7);
+    width: 98%;
+  
+    background-color: rgba(255,255,255,0.4) !important;
+    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+}
 
+.txt_label:hover{
+    background-color: rgba(255,255,255,0.8) !important;
+    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+}
+.txt_label:focus{
+    background-color: rgba(255,255,255,1) !important;
+    cursor: text;
+    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+}
 .container divm{
     border: solid 2px red;
 }
