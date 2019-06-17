@@ -630,102 +630,115 @@
                     <input type="text" class="txt_label" placeholder="Título da volta" />
 
                     <div class="controle">
-                        
-                        [ x ] Duração 25m 
-                        <x-box>
-                            <x-switch id="switch-1"></x-switch>
-                            <x-label for="switch-1" id="label-1">Switch</x-label>
-                        </x-box>
-                      </div>
+
+                      <x-box>
+                        <x-switch id="switch-1"></x-switch>
+                        <x-label for="switch-1" id="label-1">
+                          <x-box vertical>
+                            <strong>
+
+                              Duração do tempo
+
+                            </strong>
+                            <span> 25 min</span>
+                          </x-box>
+                        </x-label>
+                      </x-box>
+
+
+
+                    </div>
+
                     <div class="controle">
-                        [ x ] Intervalo 5m 
-                        <x-box>
-                            <x-switch id="switch-1"></x-switch>
-                            
-                            <x-label for="switch-1" id="label-1">
-                                <x-box vertical>
-                                    <strong>Switch</strong>
-                                    <span>Sample description with a <a href="#">link</a></span>
-                                </x-box>
-                            </x-label>
-                        </x-box>
-                      </div>
-                    
-                      <div class="controle">
-                          [ x ] Intervalo longo 15m 
-                      
-                        <x-box>
-                            <x-switch id="switch-1"></x-switch>
-                            
-                            <x-label for="switch-1" id="label-1">
-                                <x-box vertical>
-                                    <strong>Switch</strong>
-                                    <span>Sample description with a <a href="#">link</a></span>
-                                </x-box>
-                            </x-label>
-                        </x-box>
-                      </div>
-                    
-                      
-                      <div class="controle ">
-                          [ x ] Uma volta
-                      
-                        <x-box>
-                            <x-switch id="switch-1"></x-switch>
-                            
-                            <x-label for="switch-1" id="label-1">
-                                <x-box vertical>
-                                    <strong>Switch</strong>
-                                    <span>Sample description with a <a href="#">link</a></span>
-                                </x-box>
-                            </x-label>
-                        </x-box>
-                      </div>
-                    
-                      <div class="controle">
-                        [ x ] Alarme 
-                      
-                        <x-box>
-                            <x-switch id="switch-1"></x-switch>
-                            
-                            <x-label for="switch-1" id="label-1">
-                                <x-box vertical>
-                                    <strong>Switch</strong>
-                                    <span>Sample description with a <a href="#">link</a></span>
-                                </x-box>
-                            </x-label>
-                        </x-box>
-                      </div>
-                      
-                      <div class="controle">
-                          [ x ] Data 
-                      
-                        <x-box>
-                            <x-switch id="switch-1"></x-switch>
-                            
-                            <x-label for="switch-1" id="label-1">
-                                <x-box vertical>
-                                    <strong>Switch</strong>
-                                    <span>Sample description with a <a href="#">link</a></span>
-                                </x-box>
-                            </x-label>
-                        </x-box>
-                      </div>
+                      <x-box>
+                        <x-switch id="switch-1"></x-switch>
+
+                        <x-label for="switch-1" id="label-1">
+                          <x-box vertical>
+                            <strong>Intervalo:</strong>
+                            <span>5m.</span>
+                          </x-box>
+                        </x-label>
+                      </x-box>
+                    </div>
+
                     <div class="controle">
-                        [ x ] Repetir
-                        
-                        <x-box>
-                            <x-switch id="switch-1"></x-switch>
-                            
-                            <x-label for="switch-1" id="label-1">
-                                <x-box vertical>
-                                    <strong>Switch</strong>
-                                    <span>Sample description with a <a href="#">link</a></span>
-                                </x-box>
-                            </x-label>
-                        </x-box>
-                      </div>
-                      
+
+
+                      <x-box>
+                        <x-switch id="switch-1"></x-switch>
+
+                        <x-label for="switch-1" id="label-1">
+                          <x-box vertical>
+                            <strong>Intervalo longo</strong>
+                            <span>
+                              15min
+                            </span>
+                          </x-box>
+                        </x-label>
+                      </x-box>
+                    </div>
+
+
+                    <div class="controle ">
+
+                      <x-box>
+                        <x-switch id="switch-1"></x-switch>
+
+                        <x-label for="switch-1" id="label-1">
+                          <x-box vertical>
+                            <strong>Número de voltas</strong>
+                            <span>3 voltas</span>
+                          </x-box>
+                        </x-label>
+                      </x-box>
+                    </div>
+
+                    <div class="controle">
+
+
+                      <x-box>
+                        <x-switch id="switch-1"></x-switch>
+
+                        <x-label for="switch-1" id="label-1">
+                          <x-box vertical>
+                            <strong> Alarme</strong>
+                            <span>Tocar alarme ao término da volta</span>
+                          </x-box>
+                        </x-label>
+                      </x-box>
+                    </div>
+
+                    <div class="controle">
+
+
+                      <x-box>
+                        <x-switch id="switch-1"></x-switch>
+
+                        <x-label for="switch-1" id="label-1">
+                          <x-box vertical>
+                            <strong>Dia e hora do início da volta</strong>
+                            <span>[01/07/2019] - [15:00] </span>
+                            <input type="date" />
+                          </x-box>
+                        </x-label>
+                      </x-box>
+                    </div>
+                    <div class="controle">
+
+
+                      <x-box>
+                        <x-switch id="switch-1"></x-switch>
+
+                        <x-label for="switch-1" id="label-1">
+                          <x-box vertical>
+                            <strong>Repetição</strong>
+                            <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
+                          </x-box>
+                        </x-label>
+                      </x-box>
+                    </div>
+
                     <div class="display_btns">
                       <div class="btn">Adicionar </div>
                       <div class="btn">Fechar </div>
@@ -748,7 +761,7 @@
                 <main>
 
                   <div class="listbox">
-                    
+
                     <div class="item_list activo">
                       <span class="icon icon-clock"></span>
                       <div class="list_title">
@@ -758,7 +771,7 @@
                         [seg - qua - sex]
                       </div>
                     </div>
-                    
+
                     <div class="item_list">
                       <span class="icon icon-play"></span>
                       <div class="list_title">Almoço da firma</div>
@@ -782,7 +795,7 @@
                         [seg - qua - sex]
                       </div>
                     </div>
-                    
+
                     <div class="item_list">
                       <span class="icon icon-play"></span>
                       <div class="list_title">Almoço da firma</div>
@@ -805,7 +818,7 @@
                         [seg - qua - sex]
                       </div>
                     </div>
-                    
+
                     <div class="item_list">
                       <span class="icon icon-play"></span>
                       <div class="list_title">Almoço da firma</div>
@@ -829,7 +842,7 @@
                         [seg - qua - sex]
                       </div>
                     </div>
-                    
+
                     <div class="item_list">
                       <span class="icon icon-play"></span>
                       <div class="list_title">Almoço da firma</div>
@@ -843,7 +856,7 @@
                       <div class="list_title">Malhação</div>
                       <div class="date_list">[seg - qua - sex]</div>
                     </div>
-                  
+
 
                   </div>
                 </main>
