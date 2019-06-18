@@ -632,8 +632,8 @@
                     <div class="controle">
 
                       <x-box>
-                        <x-switch id="switch-1"></x-switch>
-                        <x-label for="switch-1" id="label-1">
+                        <x-switch id="sw_duracao_do_tempo"></x-switch>
+                        <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
                           <x-box vertical>
                             <strong>
 
@@ -651,9 +651,9 @@
 
                     <div class="controle">
                       <x-box>
-                        <x-switch id="switch-1"></x-switch>
+                        <x-switch id="sw_intervalo"></x-switch>
 
-                        <x-label for="switch-1" id="label-1">
+                        <x-label for="sw_intervalo" id="label_intervalo">
                           <x-box vertical>
                             <strong>Intervalo:</strong>
                             <span>5m.</span>
@@ -666,9 +666,9 @@
 
 
                       <x-box>
-                        <x-switch id="switch-1"></x-switch>
+                        <x-switch id="sw_intervalo_longo"></x-switch>
 
-                        <x-label for="switch-1" id="label-1">
+                        <x-label for="sw_intervalo_longo" id="label_intervalo_longo">
                           <x-box vertical>
                             <strong>Intervalo longo</strong>
                             <span>
@@ -683,9 +683,9 @@
                     <div class="controle ">
 
                       <x-box>
-                        <x-switch id="switch-1"></x-switch>
+                        <x-switch id="sw_numero_de_voltas"></x-switch>
 
-                        <x-label for="switch-1" id="label-1">
+                        <x-label for="sw_numero_de_voltas" id="label_numero_de_voltas">
                           <x-box vertical>
                             <strong>Número de voltas</strong>
                             <span>3 voltas</span>
@@ -698,9 +698,9 @@
 
 
                       <x-box>
-                        <x-switch id="switch-1"></x-switch>
+                        <x-switch id="sw_alarme"></x-switch>
 
-                        <x-label for="switch-1" id="label-1">
+                        <x-label for="sw_alarme" id="label_alarme">
                           <x-box vertical>
                             <strong> Alarme</strong>
                             <span>Tocar alarme ao término da volta</span>
@@ -713,24 +713,27 @@
 
 
                       <x-box>
-                        <x-switch id="switch-1"></x-switch>
+                        <x-switch id="sw_data_inicial"></x-switch>
+                        <x-box vertical>
+                          <x-label for="sw_data_inicial" id="label_data_inicial">
 
-                        <x-label for="switch-1" id="label-1">
-                          <x-box vertical>
-                            <strong>Dia e hora do início da volta</strong>
-                            <span>[01/07/2019] - [15:00] </span>
-                            <input type="date" />
-                          </x-box>
-                        </x-label>
+                            <x-box vertical>
+                              <strong>Dia e hora do início da volta</strong>
+                              <span>[01/07/2019] - [15:00] </span>
+
+                            </x-box>
+                          </x-label>
+                          <input type="date" />
+                        </x-box>
                       </x-box>
                     </div>
                     <div class="controle">
 
 
                       <x-box>
-                        <x-switch id="switch-1"></x-switch>
+                        <x-switch id="sw_repeticao"></x-switch>
 
-                        <x-label for="switch-1" id="label-1">
+                        <x-label for="sw_repeticao" id="label_repeticao">
                           <x-box vertical>
                             <strong>Repetição</strong>
                             <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
