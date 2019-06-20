@@ -51,7 +51,8 @@
     <div class="window-content">
 
       <div class="pane-group">
-        <!--<div class="pane-sm sidebar">...</div>-->
+
+        <div class="pane-sm sidebar">...</div>
 
         <div class="pane">
           <div class="container">
@@ -65,6 +66,7 @@
                     <span class="icon icon-pause"></span>
                     <span class="icon icon-stop"></span>
                     -->
+
               </button>
               <div class="display_crono">
                 <div class="display_time">00: </div>
@@ -84,17 +86,13 @@
 
                 <button class="btn btn_laterais">-5m </button>
 
-                <!--
-                <button class="btn">
-                    <span class="icon icon-pause"></span>
-                    Pause
-                </button>
-                -->
+
+
+
                 <x-button toggled togglable class="btn">
                   <x-box>
-                    <!--<x-icon name="home"></x-icon>
-                    <x-label>Button</x-label>
-                    -->
+
+
                     <span class="icon icon-pause"></span>Pause
 
                   </x-box>
@@ -102,7 +100,8 @@
                   <x-notification timeout="2000">This notification will disappear after 2000 miliseconds.
                   </x-notification>
                 </x-button>
-                <!--<button class="btn "> <span class="icon icon-pause"></span><span class="icon icon-clock" style="margin-right: 2px;"> </span> Pause Counted </button>-->
+
+
 
 
                 <x-button toggled togglable class="btn">
@@ -558,357 +557,325 @@
                 </x-button>
 
 
-                <!--
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                <div class="volta"> </div>
-                -->
+
+
               </div>
 
 
             </div>
-            <div class="panel_right">
 
-              <x-button toggled togglable class="btn btn_config">
-                <x-box>
-
-                  <span class="icon icon-tools"></span>
-
-                </x-box>
-              </x-button>
+          </div>
+        </div>
 
 
-              <div class="panel_config">
-                <x-accordion expanded>
-                  <header>
-                    <x-label>
-                      <div class="label">Pomodoro </div>
-                    </x-label>
-                  </header>
-
-                  <main>
-                    <x-label>Nome da volta:</x-label>
-
-                    <input type="text" class="txt_label" placeholder="Título da volta" />
-
-                    <div class="controle">
-
-                      <x-box>
-                        <x-switch id="sw_duracao_do_tempo"></x-switch>
-                        <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
-                          <x-box vertical>
-                            <strong>
-
-                              Duração do tempo
-
-                            </strong>
-                            <span> 25 min</span>
-                          </x-box>
-                        </x-label>
-                      </x-box>
+        <div class="pane-sm sidebar">
 
 
+          <div class="panel_right">
 
-                    </div>
+            <x-button toggled togglable class="btn btn_config">
+              <x-box>
 
-                    <div class="controle">
-                      <x-box>
-                        <x-switch id="sw_intervalo"></x-switch>
+                <span class="icon icon-tools"></span>
 
-                        <x-label for="sw_intervalo" id="label_intervalo">
-                          <x-box vertical>
-                            <strong>Intervalo:</strong>
-                            <span>5m.</span>
-                          </x-box>
-                        </x-label>
-                      </x-box>
-                    </div>
-
-                    <div class="controle">
+              </x-box>
+            </x-button>
 
 
-                      <x-box>
-                        <x-switch id="sw_intervalo_longo"></x-switch>
-
-                        <x-label for="sw_intervalo_longo" id="label_intervalo_longo">
-                          <x-box vertical>
-                            <strong>Intervalo longo</strong>
-                            <span>
-                              15min
-                            </span>
-                          </x-box>
-                        </x-label>
-                      </x-box>
-                    </div>
-
-
-                    <div class="controle ">
-
-                      <x-box>
-                        <x-switch id="sw_numero_de_voltas"></x-switch>
-
-                        <x-label for="sw_numero_de_voltas" id="label_numero_de_voltas">
-                          <x-box vertical>
-                            <strong>Número de voltas</strong>
-                            <span>3 voltas</span>
-                          </x-box>
-                        </x-label>
-                      </x-box>
-                    </div>
-
-                    <div class="controle">
-
-
-                      <x-box>
-                        <x-switch id="sw_alarme"></x-switch>
-
-                        <x-label for="sw_alarme" id="label_alarme">
-                          <x-box vertical>
-                            <strong> Alarme</strong>
-                            <span>Tocar alarme ao término da volta</span>
-                          </x-box>
-                        </x-label>
-                      </x-box>
-                    </div>
-
-                    <div class="controle">
-
-
-                      <x-box>
-                        <x-switch id="sw_data_inicial"></x-switch>
-                        <x-box vertical>
-                          <x-label for="sw_data_inicial" id="label_data_inicial">
-
-                            <x-box vertical>
-                              <strong>Dia e hora do início da volta</strong>
-                              <span>[01/07/2019] - [15:00] </span>
-
-                            </x-box>
-                          </x-label>
-                          <input type="date" />
-                        </x-box>
-                      </x-box>
-                    </div>
-                    <div class="controle">
-
-
-                      <x-box>
-                        <x-switch id="sw_repeticao"></x-switch>
-
-                        <x-label for="sw_repeticao" id="label_repeticao">
-                          <x-box vertical>
-                            <strong>Repetição</strong>
-                            <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
-                          </x-box>
-                        </x-label>
-                      </x-box>
-                    </div>
-
-                    <div class="display_btns">
-                      <div class="btn">Adicionar </div>
-                      <div class="btn">Fechar </div>
-                    </div>
-
-
-                  </main>
-                </x-accordion>
-
-              </div>
-
-              <div class="panel_list">
-
+            <div class="panel_config">
+              <x-accordion expanded>
                 <header>
-                  <x-label class="label">
-                    Listas salvas
+                  <x-label>
+                    <div class="label">Pomodoro </div>
                   </x-label>
                 </header>
 
                 <main>
+                  <x-label>Nome da volta:</x-label>
 
-                  <div class="listbox">
+                  <input type="text" class="txt_label" placeholder="Título da volta" />
 
-                    <div class="item_list activo">
-                      <span class="icon icon-clock"></span>
-                      <div class="list_title">
-                        MalhaçãoOutrasinformaçõesparacrescer
-                      </div>
-                      <div class="date_list">
-                        [seg - qua - sex]
-                      </div>
-                    </div>
+                  <div class="controle">
 
-                    <div class="item_list">
-                      <span class="icon icon-play"></span>
-                      <div class="list_title">Almoço da firma</div>
-                      <div class="date_list">
-                        [03/jan/20 - 12:00]
-                      </div>
-                    </div>
+                    <x-box>
+                      <x-switch id="sw_duracao_do_tempo"></x-switch>
+                      <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
+                        <x-box vertical>
+                          <strong>
 
-                    <div class="item_list ">
-                      <span class="icon icon-pause"></span>
-                      <div class="list_title">Malhação</div>
-                      <div class="date_list">[seg - qua - sex]</div>
-                    </div>
+                            Duração do tempo
 
-                    <div class="item_list">
-                      <span class="icon icon-clock"></span>
-                      <div class="list_title">
-                        MalhaçãoOutrasinformaçõesparacrescer
-                      </div>
-                      <div class="date_list">
-                        [seg - qua - sex]
-                      </div>
-                    </div>
+                          </strong>
+                          <span> 25 min</span>
+                        </x-box>
+                      </x-label>
+                    </x-box>
 
-                    <div class="item_list">
-                      <span class="icon icon-play"></span>
-                      <div class="list_title">Almoço da firma</div>
-                      <div class="date_list">
-                        [03/jan/20 - 12:00]
-                      </div>
-                    </div>
-
-                    <div class="item_list">
-                      <span class="icon icon-pause"></span>
-                      <div class="list_title">Malhação</div>
-                      <div class="date_list">[seg - qua - sex]</div>
-                    </div>
-                    <div class="item_list">
-                      <span class="icon icon-clock"></span>
-                      <div class="list_title">
-                        MalhaçãoOutrasinformaçõesparacrescer
-                      </div>
-                      <div class="date_list">
-                        [seg - qua - sex]
-                      </div>
-                    </div>
-
-                    <div class="item_list">
-                      <span class="icon icon-play"></span>
-                      <div class="list_title">Almoço da firma</div>
-                      <div class="date_list">
-                        [03/jan/20 - 12:00]
-                      </div>
-                    </div>
-
-                    <div class="item_list ">
-                      <span class="icon icon-pause"></span>
-                      <div class="list_title">Malhação</div>
-                      <div class="date_list">[seg - qua - sex]</div>
-                    </div>
-
-                    <div class="item_list">
-                      <span class="icon icon-clock"></span>
-                      <div class="list_title">
-                        MalhaçãoOutrasinformaçõesparacrescer
-                      </div>
-                      <div class="date_list">
-                        [seg - qua - sex]
-                      </div>
-                    </div>
-
-                    <div class="item_list">
-                      <span class="icon icon-play"></span>
-                      <div class="list_title">Almoço da firma</div>
-                      <div class="date_list">
-                        [03/jan/20 - 12:00]
-                      </div>
-                    </div>
-
-                    <div class="item_list">
-                      <span class="icon icon-pause"></span>
-                      <div class="list_title">Malhação</div>
-                      <div class="date_list">[seg - qua - sex]</div>
-                    </div>
 
 
                   </div>
+
+                  <div class="controle">
+                    <x-box>
+                      <x-switch id="sw_intervalo"></x-switch>
+
+                      <x-label for="sw_intervalo" id="label_intervalo">
+                        <x-box vertical>
+                          <strong>Intervalo:</strong>
+                          <span>5m.</span>
+                        </x-box>
+                      </x-label>
+                    </x-box>
+                  </div>
+
+                  <div class="controle">
+
+
+                    <x-box>
+                      <x-switch id="sw_intervalo_longo"></x-switch>
+
+                      <x-label for="sw_intervalo_longo" id="label_intervalo_longo">
+                        <x-box vertical>
+                          <strong>Intervalo longo</strong>
+                          <span>
+                            15min
+                          </span>
+                        </x-box>
+                      </x-label>
+                    </x-box>
+                  </div>
+
+
+                  <div class="controle ">
+
+                    <x-box>
+                      <x-switch id="sw_numero_de_voltas"></x-switch>
+
+                      <x-label for="sw_numero_de_voltas" id="label_numero_de_voltas">
+                        <x-box vertical>
+                          <strong>Número de voltas</strong>
+                          <span>3 voltas</span>
+                        </x-box>
+                      </x-label>
+                    </x-box>
+                  </div>
+
+                  <div class="controle">
+
+
+                    <x-box>
+                      <x-switch id="sw_alarme"></x-switch>
+
+                      <x-label for="sw_alarme" id="label_alarme">
+                        <x-box vertical>
+                          <strong> Alarme</strong>
+                          <span>Tocar alarme ao término da volta</span>
+                        </x-box>
+                      </x-label>
+                    </x-box>
+                  </div>
+
+                  <div class="controle">
+                    <x-box>
+                      <x-switch id="sw_data_inicial"></x-switch>
+
+                      <x-box vertical>
+
+                        <x-label for="sw_data_inicial" id="label_data_inicial">
+
+                          <x-box vertical>
+                            <strong>Dia e hora do início da volta</strong>
+                            <span>[01/07/2019] - [15:00] </span>
+                          </x-box>
+
+                        </x-label>
+                        <input type="date" />
+
+                      </x-box>
+
+                    </x-box>
+                  </div>
+
+                  <div class="controle">
+                    <x-box>
+                      <x-switch id="sw_repeticao"></x-switch>
+
+                      <x-label for="sw_repeticao" id="label_repeticao">
+                        <x-box vertical>
+                          <strong>Repetição</strong>
+                          <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
+                        </x-box>
+                      </x-label>
+                    </x-box>
+                  </div>
+
+                  <div class="display_btns">
+                    <div class="btn">Adicionar </div>
+                    <div class="btn">Fechar </div>
+                  </div>
+
+
                 </main>
+              </x-accordion>
+
+            </div>
+
+            <div class="panel_list">
+
+              <header>
+                <x-label class="label">
+                  Listas salvas
+                </x-label>
+              </header>
+
+              <main>
+
+                <div class="listbox">
+
+                  <div class="item_list activo">
+                    <span class="icon icon-clock"></span>
+                    <div class="list_title">
+                      MalhaçãoOutrasinformaçõesparacrescer
+                    </div>
+                    <div class="date_list">
+                      [seg - qua - sex]
+                    </div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-play"></span>
+                    <div class="list_title">Almoço da firma</div>
+                    <div class="date_list">
+                      [03/jan/20 - 12:00]
+                    </div>
+                  </div>
+
+                  <div class="item_list ">
+                    <span class="icon icon-pause"></span>
+                    <div class="list_title">Malhação</div>
+                    <div class="date_list">[seg - qua - sex]</div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-clock"></span>
+                    <div class="list_title">
+                      MalhaçãoOutrasinformaçõesparacrescer
+                    </div>
+                    <div class="date_list">
+                      [seg - qua - sex]
+                    </div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-play"></span>
+                    <div class="list_title">Almoço da firma</div>
+                    <div class="date_list">
+                      [03/jan/20 - 12:00]
+                    </div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-pause"></span>
+                    <div class="list_title">Malhação</div>
+                    <div class="date_list">[seg - qua - sex]</div>
+                  </div>
+                  <div class="item_list">
+                    <span class="icon icon-clock"></span>
+                    <div class="list_title">
+                      MalhaçãoOutrasinformaçõesparacrescer
+                    </div>
+                    <div class="date_list">
+                      [seg - qua - sex]
+                    </div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-play"></span>
+                    <div class="list_title">Almoço da firma</div>
+                    <div class="date_list">
+                      [03/jan/20 - 12:00]
+                    </div>
+                  </div>
+
+                  <div class="item_list ">
+                    <span class="icon icon-pause"></span>
+                    <div class="list_title">Malhação</div>
+                    <div class="date_list">[seg - qua - sex]</div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-clock"></span>
+                    <div class="list_title">
+                      MalhaçãoOutrasinformaçõesparacrescer
+                    </div>
+                    <div class="date_list">
+                      [seg - qua - sex]
+                    </div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-play"></span>
+                    <div class="list_title">Almoço da firma</div>
+                    <div class="date_list">
+                      [03/jan/20 - 12:00]
+                    </div>
+                  </div>
+
+                  <div class="item_list">
+                    <span class="icon icon-pause"></span>
+                    <div class="list_title">Malhação</div>
+                    <div class="date_list">[seg - qua - sex]</div>
+                  </div>
+
+
+                </div>
+              </main>
 
 
 
 
-              </div>
+            </div>
 
 
 
-              <!--
+            <!--
 
 
-              <x-card>
-                <x-accordion>
-                  <header>
-                    <x-label style="width: 100px;"><strong>Header A</strong></x-label>
-                    <x-label>Description A</x-label>
-                  </header>
-                  <main>
-                    <p>Content A</p>
-                  </main>
-                </x-accordion>
+            <x-card>
+              <x-accordion>
+                <header>
+                  <x-label style="width: 100px;"><strong>Header A</strong></x-label>
+                  <x-label>Description A</x-label>
+                </header>
+                <main>
+                  <p>Content A</p>
+                </main>
+              </x-accordion>
 
-                <hr>
+              <hr>
 
-                <x-accordion>
-                  <header>
-                    <x-label style="width: 100px;"><strong>Header B</strong></x-label>
-                    <x-label>Description B</x-label>
-                  </header>
-                  <main>
-                    <p>Content B</p>
-                  </main>
-                </x-accordion>
+              <x-accordion>
+                <header>
+                  <x-label style="width: 100px;"><strong>Header B</strong></x-label>
+                  <x-label>Description B</x-label>
+                </header>
+                <main>
+                  <p>Content B</p>
+                </main>
+              </x-accordion>
 
-                <hr>
+              <hr>
 
-                <x-accordion>
-                  <header>
-                    <x-label style="width: 100px;"><strong>Header C</strong></x-label>
-                    <x-label>Description C</x-label>
-                  </header>
-                  <main>
-                    <p>Content C</p>
-                  </main>
-                </x-accordion>
-              </x-card>
+              <x-accordion>
+                <header>
+                  <x-label style="width: 100px;"><strong>Header C</strong></x-label>
+                  <x-label>Description C</x-label>
+                </header>
+                <main>
+                  <p>Content C</p>
+                </main>
+              </x-accordion>
+            </x-card>
 
 -->
 
@@ -916,10 +883,12 @@
 
 
 
-            </div>
           </div>
+
+
         </div>
       </div>
+
     </div>
     <!--
       <footer class="toolbar toolbar-footer">
