@@ -97,34 +97,24 @@ sidebar {
     background: linear-gradient(0deg, #eee, #C3D0D5); 
     position: absolute;
     top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  
+    left: 0px;
+    right: 0px;
+    bottom: 0px;  
     overflow: hidden;
 }
 
-
-
 .panel_right{
-   
+    background: -webkit-linear-gradient(90deg, #eee, #C3D0D5);
+    background: linear-gradient(0deg, #eee, #C3D0D5); 
     overflow:visible;
-    
     min-width: 292px;
     padding: 4px;
-    padding-top: 38px;
+    /*padding-top: 38px;*/
     box-sizing: border-box;
     display:flex;
     justify-content: flex-start;
     align-items: stretch;
     flex-direction: column;
-    border: 4px solid black;
-  
-    
-    
-    
-  
-    
 }
 
 .panel_center{
@@ -298,6 +288,7 @@ x-button.btn * {
     color: rgba(8,84,113,0.7);
     line-height: 17px;
     text-overflow: ellipsis;
+    overflow: hidden;
 }
 
 .btn .icon{
