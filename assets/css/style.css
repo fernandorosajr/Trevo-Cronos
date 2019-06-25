@@ -320,6 +320,7 @@ x-button.btn_config{
     display: flex;
     align-content: center;
     justify-content: center;
+  
 }
 x-button[toggled].btn_config:active{
     background-color: rgba(8,84,113,0.7);
@@ -383,7 +384,8 @@ x-button.volta{
     margin: 0px;
     margin-top: 4px;
     border-radius: 0px;
-    background-color: #eee;  
+    background-color: #eee; 
+      display: none;
 }
 
 .panel_list {
@@ -413,7 +415,8 @@ x-button.volta{
     transform-origin: 50% 50%;
     border: 0px solid #000;
     border-radius: 0px;
-    width: 100%;
+    border-top: 1px solid rgba(8,84,113,0.3);
+   
     
 }
 
