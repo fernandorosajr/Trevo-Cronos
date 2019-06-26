@@ -385,7 +385,7 @@ x-button.volta{
     margin-top: 4px;
     border-radius: 0px;
     background-color: #eee; 
-      display: none;
+    /*display: none;*/
 }
 
 .panel_list {
