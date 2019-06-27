@@ -813,48 +813,77 @@
                             </div>
                         </main>
                     </div>
-                    <footer  class="toolkbar toolbar-footer btn-group" style="display: flex">
-                        
-                        <button class="btn btn_foot">
+                    <footer class="toolkbar toolbar-footer" style="display: flex">
+
+
+                        <x-select>
+                            <x-menu>
+                                <x-menuitem value="train">
+
+                                    <x-label> <span class="icon icon-clock"></span> Temporalizador</x-label>
+                                </x-menuitem>
+
+                                <x-menuitem value="bike">
+                                    <x-label><span class="icon icon-hourglass"></span> Pomodoro</x-label>
+                                </x-menuitem>
+
+                                <x-menuitem value="plane" toggled>
+                                    <x-label><span class="icon icon-bell"></span> Alarme</x-label>
+                                </x-menuitem>
+
+                                <x-menuitem value="car">
+                                    <x-label><span class="icon icon-infinity"></span> Ilimitado</x-label>
+                                </x-menuitem>
+
+                            </x-menu>
+                        </x-select>
+
+
+
+
+                        <!--  <button class="btn btn_foot">
                             <span class="icon icon-stop"></span>
                         </button>
-                        
-                        <button class="btn btn_foot">
-                            <span class="icon icon-trash"></span>
-                        </button>
-                        
                         <button class="btn btn_foot">
                             <span class="icon icon-clock"></span>
                         </button>
-                        
-                        <button class="btn btn_foot">
+
+       <button class="btn btn_foot">
                             <span class="icon icon-hourglass"></span>
                         </button>
-                        
-                        <button class="btn btn_foot">
+
+       <button class="btn btn_foot">
                             <span class="icon icon-bell"></span>
                         </button>
-                        
-                        <button class="btn btn_foot">
-                            <span class="icon icon-plus-squared"></span>
-                        </button>
-                        
+
                         <button class="btn btn_foot">
                             <span class="icon icon-infinity"></span>
                         </button>
-                        
+                                   
+
+-->
+                        <div class=" btn-group">
+                        <button class="btn btn_foot">
+                            <span class="icon icon-trash"></span>
+                        </button>
+
+                        <button class="btn btn_foot">
+                            <span class="icon icon-plus-squared"></span>
+                        </button>
+
                         <button class="btn btn_foot">
                             <span class="icon icon-check"></span>
                         </button>
-                        
+
                         <button class="btn btn_foot">
                             <span class="icon icon-plus-circled"></span>
                         </button>
-                        
+
                         <button class="btn btn_foot">
                             <span class="icon icon-briefcase"></span>
                         </button>
-                        
+                        </div>
+
                     </footer>
                 </div>
 
