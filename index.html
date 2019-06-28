@@ -595,8 +595,6 @@
                                         </x-label>
                                     </x-box>
 
-
-
                                 </div>
 
                                 <div class="controle">
@@ -613,8 +611,6 @@
                                 </div>
 
                                 <div class="controle">
-
-
                                     <x-box>
                                         <x-switch id="sw_intervalo_longo"></x-switch>
 
@@ -631,7 +627,6 @@
 
 
                                 <div class="controle ">
-
                                     <x-box>
                                         <x-switch id="sw_numero_de_voltas"></x-switch>
 
@@ -645,8 +640,6 @@
                                 </div>
 
                                 <div class="controle">
-
-
                                     <x-box>
                                         <x-switch id="sw_alarme"></x-switch>
 
@@ -671,10 +664,8 @@
                                                     <strong>Dia e hora do início da volta</strong>
                                                     <span>[01/07/2019] - [15:00] </span>
                                                 </x-box>
-
                                             </x-label>
                                             <input type="date" />
-
                                         </x-box>
 
                                     </x-box>
@@ -683,7 +674,6 @@
                                 <div class="controle">
                                     <x-box>
                                         <x-switch id="sw_repeticao"></x-switch>
-
                                         <x-label for="sw_repeticao" id="label_repeticao">
                                             <x-box vertical>
                                                 <strong>Repetição</strong>
@@ -813,30 +803,45 @@
                             </div>
                         </main>
                     </div>
-                    <footer class="toolkbar toolbar-footer" style="display: flex">
+                    <footer class="toolkbar btn-group toolbar-footer" style="display: flex">
 
+                        <x-button>
+                            <x-icon name="settings"></x-icon>
 
-                        <x-select>
-                            <x-menu>
-                                <x-menuitem value="train">
+                            <x-popover modal style="--align: top;">
+                                <main>
+                                    <x-menu opened>
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-clock"></span> Temporalizador
+                                            </x-label>
+                                            <x-shortcut value="Control+Z"></x-shortcut>
+                                        </x-menuitem>
 
-                                    <x-label> <span class="icon icon-clock"></span> Temporalizador</x-label>
-                                </x-menuitem>
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-hourglass"></span> Pomodoro
+                                            </x-label>
+                                            <x-shortcut value="Control+Shift+Z"></x-shortcut>
+                                        </x-menuitem>
 
-                                <x-menuitem value="bike">
-                                    <x-label><span class="icon icon-hourglass"></span> Pomodoro</x-label>
-                                </x-menuitem>
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-bell"></span> Alarme
+                                            </x-label>
+                                            <x-shortcut value="Control+X"></x-shortcut>
+                                        </x-menuitem>
 
-                                <x-menuitem value="plane" toggled>
-                                    <x-label><span class="icon icon-bell"></span> Alarme</x-label>
-                                </x-menuitem>
-
-                                <x-menuitem value="car">
-                                    <x-label><span class="icon icon-infinity"></span> Ilimitado</x-label>
-                                </x-menuitem>
-
-                            </x-menu>
-                        </x-select>
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-infinity"></span> Ilimitado
+                                            </x-label>
+                                            <x-shortcut value="Control+C"></x-shortcut>
+                                        </x-menuitem>
+                                    </x-menu>
+                                </main>
+                            </x-popover>
+                        </x-button>
 
 
 
@@ -859,10 +864,8 @@
                         <button class="btn btn_foot">
                             <span class="icon icon-infinity"></span>
                         </button>
-                                   
-
 -->
-                        <div class=" btn-group">
+
                         <button class="btn btn_foot">
                             <span class="icon icon-trash"></span>
                         </button>
@@ -882,7 +885,6 @@
                         <button class="btn btn_foot">
                             <span class="icon icon-briefcase"></span>
                         </button>
-                        </div>
 
                     </footer>
                 </div>
