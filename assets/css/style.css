@@ -416,8 +416,6 @@ x-button.volta{
     border: 0px solid #000;
     border-radius: 0px;
     border-top: 1px solid rgba(8,84,113,0.3);
-   
-    
 }
 
 .listbox{
@@ -512,7 +510,6 @@ x-button.volta{
     border: 2px solid rgba(8,84,113,0.7);
     color: rgba(8,84,113,0.7);
     width: 98%;
-  
     background-color: rgba(255,255,255,0.4) !important;
     transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
@@ -539,6 +536,34 @@ x-button.volta{
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
+}
+
+.menu_popover{
+    box-shadow: none;
+    border: none;
+}
+
+.menu_popover x-menuitem{
+    cursor: pointer;
+    color: rgba(8,84,113,0.7);
+    
+}
+
+.menu_popover x-menuitem:hover{
+    cursor: pointer;
+      background-color: rgba(255,255,255,0.6);
+    color: rgba(8,84,113,0.9);
+    -webkit-transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
+}
+
+.menu_popover x-menuitem:active{
+    background-color: rgba(8,84,113,0.7);
+    color: #fff;
+}
+
+.menu_popover x-menuitem *{
+    cursor: pointer;
 }
 
 .window-content{
