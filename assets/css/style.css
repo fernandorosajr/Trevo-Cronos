@@ -320,8 +320,8 @@ x-button.btn_config{
     display: flex;
     align-content: center;
     justify-content: center;
-  
 }
+
 x-button[toggled].btn_config:active{
     background-color: rgba(8,84,113,0.7);
     color: #fff;
@@ -354,7 +354,6 @@ x-button[toggled].btn_config *{
     justify-content: center;
     margin: 5px auto ;
     margin-top: 15px;
- 
 }
 
 x-button.volta{
@@ -429,7 +428,7 @@ x-button.volta{
     top: 40px;
     left: 2px;
     right: 2px;
-    bottom: 28px;
+    bottom: 2px;
     position: absolute;
     border: 0px solid #000;
     border-radius: 0px 0px 0px 0px;
@@ -536,26 +535,6 @@ x-button.volta{
     text-transform: uppercase;
 }
 
-.toolbar-footer-control{
-    position:absolute;
-    box-sizing: border-box;
-   
-     -webkit-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
-    -ms-transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
-    transform: translateX(0px) translateY(0px) rotate(0deg) scaleX(1) scaleY(1) skewX(0deg) skewY(0deg);
-    
-    -webkit-transform-origin: 50% 50%;
-    -ms-transform-origin: 50% 50%;
-    transform-origin: 50% 50%;
-    
-    bottom: -5px;
-    left: 0;
-    right: 0;
-    height: 31px;
-    border-bottom: none;
-    border-top: 1px solid rgba(8,84,113,0.1);
-}
-
 .menu_popover{
     box-shadow: none;
     border: none;
@@ -568,9 +547,8 @@ x-button.volta{
 
 .menu_popover x-menuitem x-label{
     cursor: pointer;
-    text-align: left; 
+    text-align: left;
 }
-
 
 .menu_popover x-menuitem x-label .icon{
     cursor: pointer;
