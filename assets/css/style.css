@@ -115,6 +115,7 @@ sidebar {
     justify-content: flex-start;
     align-items: stretch;
     flex-direction: column;
+    
 }
 
 .panel_center{
@@ -155,13 +156,26 @@ sidebar {
     background-color: transparent;
     transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
 }
-.btn_play span{
-    cursor: pointer;
-}
 
 .btn_play:hover{
     background-color: rgba(255,255,255,0.6);
     transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
+}
+
+.btn_play:active{
+    border: 1px solid rgba(255,255,255,0.6);
+    color: rgba(8,84,113,0.9);
+     background-color: rgba(8,84,113,0.7);
+    color: #fff;
+}
+
+.btn_play .icon-play{
+   
+    margin-left: 10px;
+}
+
+.btn_play span{
+    cursor: pointer;
 }
 
 .display_crono{
@@ -386,6 +400,67 @@ x-button.volta{
     /*display: none;*/
 }
 
+.controles {
+    border: 0px solid black;
+    margin-left: 5px;
+    padding-top: 10px;
+}
+
+.controles .controle:first-child {
+    border-top: 1px solid rgba(8,84,113,0.3);  
+}
+
+.controles .controle {
+    border-bottom: 1px solid rgba(8,84,113,0.3);
+    margin-left: 5px;
+    padding: 5px;
+
+}
+
+.controles .controle:nth-child(odd) {
+     background-color: rgba(8,84,113,0.1);
+}
+
+.controles .controle:nth-child(even) {
+     background-color: rgba(255,255,255,0.6);
+
+}
+
+.controles .controle x-switch {
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.controles .controle x-label{
+    font-size: 11px;
+
+}
+
+.controles .controle input[type="date"], .controles .controle input[type="time"]{
+    cursor: pointer;
+    font-size: 11px;
+    width: auto;
+    background-color: rgba(255,255,255,0.0) !important;
+    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    border: none;
+    /*border: 1px solid rgba(8,84,113,0.7);
+    color: rgba(8,84,113,0.7);
+    
+   /* box-shadow:0px 0px 5px #6192D1;
+    -webkit-box-shadow: 0px 0px 5px  #6192D1;
+    -moz-box-shadow: 0px 0px 5px  #6192D1;       
+    outline: 0;*/
+}
+
+.controles .controle input[type="date"]{
+    width: 110px;
+  
+    
+}
+.date_time{
+    display: flex;
+}
+
 .panel_list {
     box-sizing: border-box;
     flex: 2; 
@@ -499,6 +574,13 @@ x-button.volta{
 
 .listbox .activo{
     background-color: rgba(113,8,83,0.2);
+}
+.label_2{
+    margin: 0;
+    margin-left: 5px;
+    font-size: 11px;
+    padding: 0;
+    font-weight: bold;
 }
 
 .txt_label{
