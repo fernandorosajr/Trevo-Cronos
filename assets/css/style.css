@@ -64,6 +64,7 @@ sidebar {
     letter-spacing: 0px;
     word-spacing: 0px;
     cursor: pointer;
+    
     -webkit-transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
@@ -93,19 +94,18 @@ sidebar {
 }
 
 .container{
-    background: -webkit-linear-gradient(90deg, #eee, #C3D0D5);
-    background: linear-gradient(0deg, #eee, #C3D0D5); 
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;  
     overflow: hidden;
+
+    background: -webkit-linear-gradient(90deg, #eee, #C3D0D5);
+    background: linear-gradient(0deg, #eee, #C3D0D5); 
 }
 
 .panel_right{
-    background: -webkit-linear-gradient(90deg, #eee, #C3D0D5);
-    background: linear-gradient(0deg, #eee, #C3D0D5); 
     overflow:visible;
     min-width: 292px;
     padding: 4px;
@@ -115,7 +115,12 @@ sidebar {
     justify-content: flex-start;
     align-items: stretch;
     flex-direction: column;
-    
+
+    background: -webkit-linear-gradient(90deg, #eee, #C3D0D5);
+    background: linear-gradient(0deg, #eee, #C3D0D5); 
+
+    -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .panel_center{
@@ -154,23 +159,24 @@ sidebar {
     font-weight:bold;
     padding: 0;
     background-color: transparent;
+    
     transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
 }
 
 .btn_play:hover{
     background-color: rgba(255,255,255,0.6);
+    
     transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
 }
 
 .btn_play:active{
     border: 1px solid rgba(255,255,255,0.6);
     color: rgba(8,84,113,0.9);
-     background-color: rgba(8,84,113,0.7);
+    background-color: rgba(8,84,113,0.7);
     color: #fff;
 }
 
 .btn_play .icon-play{
-   
     margin-left: 10px;
 }
 
@@ -252,11 +258,12 @@ sidebar {
     width: 15%;
     display: block;
     box-sizing: border-box;
-    background: -webkit-linear-gradient(56deg, #037502, #22b000);
-    background: linear-gradient(34deg, #037502, #22b000);
-    align-items: stretch;
+  align-items: stretch;
     color: #fff;
     text-shadow: 0px 0px 4px rgba(1,1,1,1);   
+
+    background: -webkit-linear-gradient(56deg, #037502, #22b000);
+    background: linear-gradient(34deg, #037502, #22b000);
 }
 
 .display_btns{
@@ -275,16 +282,18 @@ x-button.btn{
 
 x-button[toggled].btn{
     box-shadow: 0px 0px 13px 0px rgba(8,84,113,0.7) inset;
-    -webkit-transition: 0.2s 0.2s all cubic-bezier(0.25,0.1,0.25,1);
-    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     background-color: buttonface;
     color: rgba(8,84,113,0.7);
     line-height: 20px;
+
+    -webkit-transition: 0.2s 0.2s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     /*
     font-weight: bold;
     font-size: 14px;
     */
 }
+
 x-button.btn * {
     cursor: pointer;
 }
@@ -310,14 +319,16 @@ x-button.btn * {
 }
 
 .btn:hover {
-  box-shadow: 0px 0px 13px 0px rgba(8,84,113,0.7) inset;
-  -webkit-transition: 0.2s 0.2s all cubic-bezier(0.25,0.1,0.25,1);
-  transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    box-shadow: 0px 0px 13px 0px rgba(8,84,113,0.7) inset;
+    
+    -webkit-transition: 0.2s 0.2s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .btn:active {
     background-color:  rgba(8,84,113,0.7);
     color: white;
+    
     -webkit-transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
@@ -404,6 +415,9 @@ x-button.volta{
     border: 0px solid black;
     margin-left: 5px;
     padding-top: 10px;
+    
+    -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .controles .controle:first-child {
@@ -414,7 +428,6 @@ x-button.volta{
     border-bottom: 1px solid rgba(8,84,113,0.3);
     margin-left: 5px;
     padding: 5px;
-
 }
 
 .controles .controle:nth-child(odd) {
@@ -423,7 +436,6 @@ x-button.volta{
 
 .controles .controle:nth-child(even) {
      background-color: rgba(255,255,255,0.6);
-
 }
 
 .controles .controle x-switch {
@@ -433,7 +445,6 @@ x-button.volta{
 
 .controles .controle x-label{
     font-size: 11px;
-
 }
 
 .controles .controle input[type="date"], .controles .controle input[type="time"]{
@@ -454,9 +465,8 @@ x-button.volta{
 
 .controles .controle input[type="date"]{
     width: 110px;
-  
-    
 }
+
 .date_time{
     display: flex;
 }
@@ -486,6 +496,7 @@ x-button.volta{
     -webkit-transform-origin: 50% 50%;
     -ms-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
+   
     border: 0px solid #000;
     border-radius: 0px;
     border-top: 1px solid rgba(8,84,113,0.3);
@@ -510,7 +521,6 @@ x-button.volta{
     padding: 8px;
     padding-top: 4px;
 }
-
 
 .listbox .item_list{
     display: flex;
@@ -559,6 +569,7 @@ x-button.volta{
     border: 1px solid transparent;
     background-color: rgba(255,255,255,0.6);
     color: rgba(8,84,113,0.9);
+    
     -webkit-transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
 }
@@ -575,6 +586,7 @@ x-button.volta{
 .listbox .activo{
     background-color: rgba(113,8,83,0.2);
 }
+
 .label_2{
     margin: 0;
     margin-left: 5px;
@@ -590,17 +602,20 @@ x-button.volta{
     color: rgba(8,84,113,0.7);
     width: 98%;
     background-color: rgba(255,255,255,0.4) !important;
+    
     transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .txt_label:hover{
     background-color: rgba(255,255,255,0.8) !important;
+    
     transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .txt_label:focus{
     background-color: rgba(255,255,255,1) !important;
     cursor: text;
+    
     transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
@@ -644,6 +659,7 @@ x-button.volta{
     cursor: pointer;
       background-color: rgba(255,255,255,0.6);
     color: rgba(8,84,113,0.9);
+    
     -webkit-transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
 }
@@ -659,4 +675,34 @@ x-button.volta{
 
 .window-content{
     overflow: hidden;
+}
+
+
+@media only screen and (max-width: 742px) {
+   /*estilos*/
+    
+    .panel_right{
+   
+    overflow:visible;
+    min-width: 232px;
+    padding: 4px;
+    padding-top: 38px;
+    box-sizing: border-box;
+    display:flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+        
+    -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+}
+    .controles{
+       
+        height: 290px;
+        overflow: auto;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+
 }
