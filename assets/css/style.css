@@ -258,7 +258,7 @@ sidebar {
     width: 15%;
     display: block;
     box-sizing: border-box;
-  align-items: stretch;
+    align-items: stretch;
     color: #fff;
     text-shadow: 0px 0px 4px rgba(1,1,1,1);   
 
@@ -678,31 +678,66 @@ x-button.volta{
 }
 
 
-@media only screen and (max-width: 742px) {
-   /*estilos*/
-    
+@media only screen and (min-width: 683px) and (max-width: 742px) {
+
     .panel_right{
-   
-    overflow:visible;
-    min-width: 232px;
-    padding: 4px;
-    padding-top: 38px;
-    box-sizing: border-box;
-    display:flex;
-    justify-content: flex-start;
-    align-items: stretch;
-    flex-direction: column;
+        overflow:visible;
+        min-width: 232px;
+        padding: 4px;
+        padding-top: 38px;
+        box-sizing: border-box;
+        display:flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: column;
         
-    -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
-    transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
-}
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        
+    
+        
+        
+    }
+    
     .controles{
-       
         height: 290px;
         overflow: auto;
         
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     }
+}
 
+
+@media only screen and (max-width: 683px){
+    
+    .panel_right{
+        overflow:visible;
+        min-width: 232px;
+        padding: 4px;
+        padding-top: 38px;
+        box-sizing: border-box;
+        display:flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: column;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        
+      
+    }
+    
+    .controles{
+        height: 290px;
+        overflow: auto;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
 }
