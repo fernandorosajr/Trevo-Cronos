@@ -202,6 +202,9 @@ sidebar {
     color: #999;
     font-size: 77px;
     font-weight:300;
+    
+    -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .display_time.display_ms{
@@ -211,6 +214,9 @@ sidebar {
     margin-bottom: 17px;  
     font-size: 37px;
     color: rgba(8,84,113,0.7);
+    
+    -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .display_time.display_ss{
@@ -657,7 +663,7 @@ x-button.volta{
 
 .menu_popover x-menuitem:hover{
     cursor: pointer;
-      background-color: rgba(255,255,255,0.6);
+    background-color: rgba(255,255,255,0.6);
     color: rgba(8,84,113,0.9);
     
     -webkit-transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
@@ -678,7 +684,7 @@ x-button.volta{
 }
 
 
-@media only screen and (min-width: 683px) and (max-width: 742px) {
+@media only screen and (min-width: 697px) and (max-width: 749px) {
 
     .panel_right{
         overflow:visible;
@@ -693,10 +699,6 @@ x-button.volta{
         
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
-        
-    
-        
-        
     }
     
     .controles{
@@ -709,7 +711,29 @@ x-button.volta{
 }
 
 
-@media only screen and (max-width: 683px){
+@media only screen and (max-width: 697px){
+    .btn_play{
+        width: 140px;
+        height: 140px;
+    }
+    
+    .display_time{
+        display: block;
+        box-sizing: border-box;
+        position:static;
+        color: #999;
+        font-size: 70px;
+        font-weight:300;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+}
+    
+   .display_time.display_ms{
+        font-size: 30px;
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
     
     .panel_right{
         overflow:visible;
@@ -724,13 +748,13 @@ x-button.volta{
         
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
-        
+        background: red;
+        /*
         position: absolute;
         right: 0;
         bottom: 0;
         top: 0;
-        
-      
+        */
     }
     
     .controles{
