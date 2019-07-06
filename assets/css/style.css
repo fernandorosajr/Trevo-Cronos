@@ -51,8 +51,21 @@ sidebar {
     margin-left: -4px;
 }
 
+.toobar_settings{
+    
+    display: flex;
+  
+    align-items: center;
+}
+
+.toobar_settings *{
+    
+}
+
 .btn_log {
-    width: auto;
+    height: 23px;
+    line-height: 15px;
+    
     background: #FEFEFE;
     background-size: auto;
     padding: 3px 10px;
@@ -92,6 +105,7 @@ sidebar {
     background-color: red;
     border:  1px solid red;
 }
+
 
 .container{
     position: absolute;
@@ -687,6 +701,7 @@ x-button.volta{
     text-transform: uppercase;
 }
 
+/* LAYOUT DE MENU FLUTUANTE */
 .menu_popover{
     box-shadow: none;
     border: none;
@@ -695,11 +710,21 @@ x-button.volta{
 .menu_popover x-menuitem{
     cursor: pointer;
     color: rgba(8,84,113,0.7); 
+
 }
 
 .menu_popover x-menuitem x-label{
     cursor: pointer;
     text-align: left;
+    display: flex;
+    
+    font-size: 12px;
+    font-weight: 400;
+    font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+}
+
+.menu_popover x-menuitem x-shortcut {
+     font-weight: 400;
 }
 
 .menu_popover x-menuitem x-label .icon{
@@ -727,6 +752,8 @@ x-button.volta{
 .menu_popover x-menuitem *{
     cursor: pointer;
 }
+
+/* FIM DE LAYOUT DE MENU FLUTUANTE */
 
 .window-content{
     overflow: hidden;

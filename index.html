@@ -26,10 +26,56 @@
 
             <h1 class="title">***</h1>
 
-            <div class="">
+            <div class="toobar_settings">
                 <input type="button" class="btn_log" value="Lougot (usu)" />
                 <input type="button" class="btn_log" value="Settings" />
                 <input type="button" class="btn_log" value="Logar" />
+
+
+                <!-- INICIO DE BRT_MENU -->
+                <x-button class="btn_log btn_control btn_menu">
+                    <x-icon name="menu"></x-icon>
+
+                    <x-popover modal>
+                        <main>
+                            <x-menu class="menu_popover" opened>
+
+                                <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-clock"></span> Data Usu
+                                    </x-label>
+                                    <x-shortcut value="Control+T"></x-shortcut>
+                                </x-menuitem>
+
+                                <hr />
+
+                                <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-hourglass"></span> Lougot (usu)
+                                    </x-label>
+                                    <x-shortcut value="Control+P"></x-shortcut>
+                                </x-menuitem>
+
+                                <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-bell"></span> Settings
+                                    </x-label>
+                                    <x-shortcut value="Control+L"></x-shortcut>
+                                </x-menuitem>
+
+                                <hr />
+
+                                <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-infinity"></span> Close
+                                    </x-label>
+                                    <x-shortcut value="Control+I"></x-shortcut>
+                                </x-menuitem>
+                            </x-menu>
+                        </main>
+                    </x-popover>
+                </x-button>
+                <!-- FIM DE BTN_MENU -->
 
                 <button class="btn_log btn_control">
                     <span class="icon icon-minus"></span>
@@ -83,7 +129,7 @@
                             </div>
 
                             <div class="display_detal_cronos">
-                               <div class="display_initial">00:00:00 </div>
+                                <div class="display_initial">00:00:00 </div>
                                 <div class="display_median">
                                     <div class="progress_bar">
                                         00:00:00
@@ -97,7 +143,8 @@
 
                                 <x-button toggled togglable class="btn">
                                     <x-box>
-                                        <span class="icon icon-pause"></span><span class="btn_texto">Pause</span>
+                                        <span class="icon icon-pause"></span>
+                                        <span class="btn_texto">Pause</span>
                                     </x-box>
                                     <x-notification timeout="2000">This notification will disappear after 2000
                                         miliseconds.</x-notification>
@@ -109,8 +156,9 @@
                                         <x-label>Button</x-label>
                                         -->
                                         <span class="icon icon-pause"></span>
-                                        <span class="icon icon-clock" style="margin-right: 5px;"></span> <span class="btn_texto">Pause Counted</span>
-                                       
+                                        <span class="icon icon-clock" style="margin-right: 5px;"></span>
+                                        <span class="btn_texto">Pause Counted</span>
+
                                     </x-box>
                                     <x-notification timeout="2000">This notification will disappear after 2000
                                         miliseconds.
@@ -118,7 +166,8 @@
                                 </x-button>
 
                                 <button class="btn">
-                                    <span class="icon icon-stop"></span> <span class="btn_texto">Stop</span>
+                                    <span class="icon icon-stop"></span>
+                                    <span class="btn_texto">Stop</span>
                                 </button>
 
                                 <button class="btn btn_laterais">+5m </button>
@@ -687,15 +736,12 @@
                                             </x-label>
                                         </x-box>
                                     </div>
-
-
                                 </div>
 
                                 <div class="display_btns">
                                     <div class="btn">Adicionar </div>
                                     <div class="btn">Fechar </div>
                                 </div>
-
 
                             </main>
                         </x-accordion>
