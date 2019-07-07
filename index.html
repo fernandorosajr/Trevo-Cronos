@@ -27,13 +27,13 @@
             <h1 class="title">***</h1>
 
             <div class="toobar_settings">
-                <input type="button" class="btn_log" value="Lougot (usu)" />
-                <input type="button" class="btn_log" value="Settings" />
-                <input type="button" class="btn_log" value="Logar" />
+                <input type="button" class="btn_controls btn_log" value="Lougot (usu)" />
+                <input type="button" class="btn_controls btn_log" value="Settings" />
+                <input type="button" class="btn_controls btn_log" value="Logar" />
 
 
                 <!-- INICIO DE BRT_MENU -->
-                <x-button class="btn_log btn_control btn_menu">
+                <x-button class="btn_controls btn_control btn_menu">
                     <x-icon name="menu"></x-icon>
 
                     <x-popover modal>
@@ -42,34 +42,33 @@
 
                                 <x-menuitem>
                                     <x-label>
-                                        <span class="icon icon-clock"></span> Data Usu
+                                        <span class="icon icon-user"></span> Data Usu
                                     </x-label>
-                                    <x-shortcut value="Control+T"></x-shortcut>
+                                  
+                                </x-menuitem>
+
+                                <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-logout"></span> Lougot (usu)
+                                    </x-label>
+                                   
                                 </x-menuitem>
 
                                 <hr />
 
-                                <x-menuitem>
+                                 <x-menuitem>
                                     <x-label>
-                                        <span class="icon icon-hourglass"></span> Lougot (usu)
+                                        <span class="icon icon-cog"></span>Settings
                                     </x-label>
-                                    <x-shortcut value="Control+P"></x-shortcut>
+                                   
                                 </x-menuitem>
-
-                                <x-menuitem>
-                                    <x-label>
-                                        <span class="icon icon-bell"></span> Settings
-                                    </x-label>
-                                    <x-shortcut value="Control+L"></x-shortcut>
-                                </x-menuitem>
-
+                                
                                 <hr />
-
                                 <x-menuitem>
                                     <x-label>
-                                        <span class="icon icon-infinity"></span> Close
+                                        <span class="icon icon-cancel"></span> Close
                                     </x-label>
-                                    <x-shortcut value="Control+I"></x-shortcut>
+                                   
                                 </x-menuitem>
                             </x-menu>
                         </main>
@@ -77,15 +76,15 @@
                 </x-button>
                 <!-- FIM DE BTN_MENU -->
 
-                <button class="btn_log btn_control">
+                <button class="btn_controls btn_control">
                     <span class="icon icon-minus"></span>
                 </button>
 
-                <button class="btn_log btn_control">
+                <button class="btn_controls btn_control">
                     <span class="icon icon-plus"></span>
                 </button>
 
-                <button class="btn_log btn_close">
+                <button class="btn_controls btn_close">
                     <span class="icon icon-cancel"></span>
                 </button>
 
