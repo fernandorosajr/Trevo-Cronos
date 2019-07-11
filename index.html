@@ -27,13 +27,13 @@
             <h1 class="title">***</h1>
 
             <div class="toobar_settings">
-                <input type="button" class="btn_controls btn_log" value="Lougot (usu)" />
-                <input type="button" class="btn_controls btn_log" value="Settings" />
-                <input type="button" class="btn_controls btn_log" value="Logar" />
+                <input type="button" class="btn_titlebar btn_log" value="Lougot (usu)" />
+                <input type="button" class="btn_titlebar btn_log" value="Settings" />
+                <input type="button" class="btn_titlebar btn_log" value="Logar" />
 
 
                 <!-- INICIO DE BRT_MENU -->
-                <x-button class="btn_controls btn_control btn_menu">
+                <x-button class="btn_titlebar btn_control btn_menu">
                     <x-icon name="menu"></x-icon>
 
                     <x-popover modal>
@@ -54,6 +54,45 @@
                                    
                                 </x-menuitem>
 
+                                <hr/>
+                                
+                                    <x-menuitem>
+                                    <x-label> <span class="icon icon-clock"></span>Add Time</x-label>
+                                    
+                                    <x-menu class="">
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-clock"></span> Temporalizador
+                                            </x-label>
+                                            <x-shortcut value="Control+T"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-hourglass"></span> Pomodoro
+                                            </x-label>
+                                            <x-shortcut value="Control+P"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-bell"></span> Alarme
+                                            </x-label>
+                                            <x-shortcut value="Control+L"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-infinity"></span> Ilimitado
+                                            </x-label>
+                                            <x-shortcut value="Control+I"></x-shortcut>
+                                        </x-menuitem>
+                                    </x-menu>
+                                </x-menuitem>
+                                
+                                
+                                
+                                
                                 <hr />
 
                                  <x-menuitem>
@@ -64,27 +103,48 @@
                                 </x-menuitem>
                                 
                                 <hr />
+                                
+                                 <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-cancel"></span> Maximize
+                                    </x-label>
+                                </x-menuitem>
+                                
+                                 <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-cancel"></span> Restaure
+                                    </x-label>
+                                   
+                                </x-menuitem>
+                                
+                                 <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-cancel"></span> Minimize
+                                    </x-label>
+                                   
+                                </x-menuitem>
                                 <x-menuitem>
                                     <x-label>
                                         <span class="icon icon-cancel"></span> Close
                                     </x-label>
                                    
                                 </x-menuitem>
+                                
                             </x-menu>
                         </main>
                     </x-popover>
                 </x-button>
                 <!-- FIM DE BTN_MENU -->
 
-                <button class="btn_controls btn_control">
+                <button class="btn_titlebar btn_control btn_window">
                     <span class="icon icon-minus"></span>
                 </button>
 
-                <button class="btn_controls btn_control">
+                <button class="btn_titlebar btn_control  btn_window">
                     <span class="icon icon-plus"></span>
                 </button>
 
-                <button class="btn_controls btn_close">
+                <button class="btn_titlebar btn_close btn_window">
                     <span class="icon icon-cancel"></span>
                 </button>
 

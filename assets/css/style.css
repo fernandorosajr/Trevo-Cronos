@@ -62,7 +62,7 @@ sidebar {
     
 }
 
-.btn_controls {
+.btn_titlebar {
     height: 23px;
     line-height: 15px;
     
@@ -82,7 +82,7 @@ sidebar {
     transition: 0.3s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
-.btn_controls:hover {
+.btn_titlebar:hover {
     background: #017BFF;
     border: 1px solid #017BFF;
     color: #FFFFFF
@@ -151,7 +151,10 @@ sidebar {
     justify-content:center;
     overflow:auto;
     align-self: stretch;
-    padding-top: 0px;    
+    padding-top: 0px; 
+    
+    -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
 
 .btn_play{
@@ -447,6 +450,8 @@ x-button[toggled].btn_config *{
     
     -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    
+    display: none;
 
 }
 
@@ -1001,7 +1006,7 @@ x-button.volta{
 }
 
 
-@media only screen  and (max-width: 485px){
+@media only screen  and (min-width: 375px) and (max-width: 485px){
      .btn_log{
         display: none;
     }
@@ -1056,9 +1061,7 @@ x-button.volta{
         
         display: none;
     }
-    
-   
-    
+     
     .controles{
         height: 290px;
         overflow: auto;
@@ -1090,5 +1093,111 @@ x-button.volta{
         
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+}
+
+@media only screen  and (max-width: 375px){
+     .btn_log{
+        display: none;
+    }
+    
+    .btn_menu{
+        display: block;
+    }
+    
+    .btn_play{
+        width: 120px;
+        height: 120px;
+        font-size: 72px;
+    }
+    
+    .display_time{
+        display: block;
+        box-sizing: border-box;
+        position:static;
+        color: #999;
+        font-size: 50px;
+        font-weight:300;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+   .display_time.display_ms{
+        font-size: 20px;
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+    .panel_right{
+        overflow:visible;
+        min-width: 232px;
+        padding: 4px;
+        padding-top: 38px;
+        box-sizing: border-box;
+        display:flex;
+        justify-content: flex-start;
+        align-items: stretch;
+        flex-direction: column;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        background: red;
+    
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        
+        display: none;
+    }
+     
+    .controles{
+        height: 290px;
+        overflow: auto;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+    .voltas{
+        max-width: 343px;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+    .display_initial, .display_end{
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+    .display_median{
+        flex: 15 0 auto;
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+    .btn_texto{
+        display:none;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+    .panel_center{
+        justify-content:flex-start;
+        padding-top: 100px;
+        
+        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+        transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
+    }
+    
+    .btn_window{
+        display: none;
+    }
+    
+    .btn_menu{
+        margin-right: 5px;
     }
 }
