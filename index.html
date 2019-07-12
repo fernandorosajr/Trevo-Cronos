@@ -39,27 +39,23 @@
                     <x-popover modal>
                         <main>
                             <x-menu class="menu_popover" opened>
-
                                 <x-menuitem>
+                                    <x-icon name="alarm-add"></x-icon>
                                     <x-label>
-                                        <span class="icon icon-user"></span> Data Usu
+                                        <!--<span class="icon icon-clock"></span>-->Add Time
                                     </x-label>
-                                  
-                                </x-menuitem>
 
-                                <x-menuitem>
-                                    <x-label>
-                                        <span class="icon icon-logout"></span> Lougot (usu)
-                                    </x-label>
-                                   
-                                </x-menuitem>
-
-                                <hr/>
-                                
-                                    <x-menuitem>
-                                    <x-label> <span class="icon icon-clock"></span>Add Time</x-label>
-                                    
                                     <x-menu class="">
+                                        <x-menuitem>
+                                            <x-icon name="timer"></x-icon>
+                                            <x-label>
+                                                Cronômetro
+                                            </x-label>
+                                            <x-shortcut value="Control+R"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <hr />
+
                                         <x-menuitem>
                                             <x-label>
                                                 <span class="icon icon-clock"></span> Temporalizador
@@ -89,47 +85,65 @@
                                         </x-menuitem>
                                     </x-menu>
                                 </x-menuitem>
-                                
-                                
-                                
-                                
+
                                 <hr />
 
-                                 <x-menuitem>
+                                <x-menuitem>
+                                    <x-icon name="person"></x-icon>
+                                    <x-label>
+                                        Data Usu
+                                    </x-label>
+                                </x-menuitem>
+
+                                <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-logout"></span> Lougot (usu)
+                                    </x-label>
+                                </x-menuitem>
+
+                                <hr />
+
+                                <x-menuitem>
                                     <x-label>
                                         <span class="icon icon-cog"></span>Settings
                                     </x-label>
-                                   
                                 </x-menuitem>
-                                
+
                                 <hr />
-                                
-                                 <x-menuitem>
+
+                                <x-menuitem>
                                     <x-label>
-                                        <span class="icon icon-cancel"></span> Maximize
+                                        <span class="icon icon-plus"></span>Maximize
                                     </x-label>
                                 </x-menuitem>
-                                
-                                 <x-menuitem>
+
+                                <x-menuitem>
                                     <x-label>
-                                        <span class="icon icon-cancel"></span> Restaure
+                                        <span class="icon icon-plus"></span> Restaure
                                     </x-label>
-                                   
+
                                 </x-menuitem>
-                                
-                                 <x-menuitem>
+
+                                <x-menuitem>
                                     <x-label>
-                                        <span class="icon icon-cancel"></span> Minimize
+                                        <span class="icon icon-minus"></span> Minimize
                                     </x-label>
-                                   
+
                                 </x-menuitem>
                                 <x-menuitem>
                                     <x-label>
                                         <span class="icon icon-cancel"></span> Close
                                     </x-label>
-                                   
+
                                 </x-menuitem>
-                                
+                                <hr />
+                                <x-menuitem>
+                                    <x-icon class="" name="info"></x-icon>
+                                    <x-label>
+                                        About Trevo Cronos
+                                    </x-label>
+
+                                </x-menuitem>
                             </x-menu>
                         </main>
                     </x-popover>
@@ -142,6 +156,7 @@
 
                 <button class="btn_titlebar btn_control  btn_window">
                     <span class="icon icon-plus"></span>
+
                 </button>
 
                 <button class="btn_titlebar btn_close btn_window">
@@ -200,6 +215,10 @@
                             <div class="display_btns btn-group">
                                 <button class="btn btn_laterais">-5m</button>
 
+                                <button class="btn">
+                                    <x-icon name="flag"></x-icon>
+                                </button>
+
                                 <x-button toggled togglable class="btn">
                                     <x-box>
                                         <span class="icon icon-pause"></span>
@@ -210,13 +229,20 @@
                                 </x-button>
 
                                 <x-button toggled togglable class="btn">
+                                    <x-icon name="snooze"></x-icon>
+
+                                    <span class="btn_texto"> Pause Counted</span>
                                     <x-box>
                                         <!--<x-icon name="home"></x-icon>
                                         <x-label>Button</x-label>
                                         -->
+
+                                        <!--
                                         <span class="icon icon-pause"></span>
+                                        
                                         <span class="icon icon-clock" style="margin-right: 5px;"></span>
-                                        <span class="btn_texto">Pause Counted</span>
+                                        -->
+
 
                                     </x-box>
                                     <x-notification timeout="2000">This notification will disappear after 2000
@@ -697,9 +723,7 @@
                                             <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
                                                 <x-box vertical>
                                                     <strong>
-
                                                         Duração do tempo
-
                                                     </strong>
                                                     <span> 25 min</span>
                                                 </x-box>
@@ -735,7 +759,6 @@
                                             </x-label>
                                         </x-box>
                                     </div>
-
 
                                     <div class="controle">
                                         <x-box>
@@ -919,13 +942,23 @@
                     <footer class="toolkbar btn-group toolbar-footer" style="display: flex">
 
                         <x-button class="btn" style="display: flex">
-                            <x-icon name="add"></x-icon>
+                            <x-icon name="alarm-add"></x-icon>
                             &nbsp;
                             <span class="icon icon-down-open-big"></span>
 
                             <x-popover modal style="--align: top;">
                                 <main>
                                     <x-menu class="menu_popover" opened>
+                                        <x-menuitem>
+                                            <x-icon name="timer"></x-icon>
+                                            <x-label>
+                                                Cronômetro
+                                            </x-label>
+                                            <x-shortcut value="Control+R"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <hr />
+
                                         <x-menuitem>
                                             <x-label>
                                                 <span class="icon icon-clock"></span> Temporalizador
@@ -1011,5 +1044,4 @@
     </div>
 
 </body>
-
 </html>
