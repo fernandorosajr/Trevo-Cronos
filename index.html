@@ -109,7 +109,7 @@
                                     </x-label>
                                 </x-menuitem>
 
-                                <hr  class="item_menu_control"/>
+                                <hr class="item_menu_control" />
 
                                 <x-menuitem class="item_menu_control">
                                     <x-label>
@@ -195,6 +195,10 @@
                                 <span class="icon icon-play"></span>
                             </button>
 
+
+
+
+                            <!-- INICIO DE DISPLAY -->
                             <div class="display_crono">
                                 <div class="display_time">00: </div>
                                 <div class="display_time">00: </div>
@@ -203,14 +207,38 @@
                             </div>
 
                             <div class="display_detal_cronos">
-                                <div class="display_initial">00:00:00 </div>
+
+                                <div class="display_initial">
+                                    <div class="display_initial_title">
+                                        Initial:
+                                    </div>
+                                    <span class="display_initial_value">
+                                        00:00:00
+                                    </span>
+                                </div>
+
                                 <div class="display_median">
                                     <div class="progress_bar">
-                                        00:00:00
+                                        <span class="progress_bar_value">
+                                            00:00:00
+                                        </span>
                                     </div>
                                 </div>
-                                <div class="display_end">00:00:00 </div>
+
+                                <div class="display_end">
+                                    <div class="display_initial_title">
+                                        final:
+                                    </div>
+                                    <span class="display_end_value">
+                                        00:00:00
+                                    </span>
+                                </div>
                             </div>
+
+                            <!-- FINAL DE DISPLAY -->
+
+
+
 
                             <div class="display_btns btn-group">
                                 <button class="btn btn_laterais">-5m</button>
@@ -1044,4 +1072,5 @@
     </div>
 
 </body>
+
 </html>
