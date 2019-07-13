@@ -20,6 +20,10 @@ sidebar {
     background-color: #f5f5f4;
 }
 
+.item_menu_lougot{
+    display: none;
+} 
+
 .title{
     background-color: transparent;
     line-height:30px; 
@@ -106,6 +110,9 @@ sidebar {
     border:  1px solid red;
 }
 
+.item_menu_control{
+    display: none;
+}
 
 .container{
     position: absolute;
@@ -777,6 +784,7 @@ x-button.volta{
         justify-content: flex-start;
         align-items: stretch;
         flex-direction: column;
+       
         
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
@@ -917,12 +925,20 @@ x-button.volta{
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     }
+    
+    .item_menu_lougot{
+        display: none;
+    }
 }
 
 @media only screen  and (min-width: 485px) and (max-width: 600px){
     
     .btn_log{
         display: none;
+    }
+    
+    .item_menu_lougot{
+        display:flex;
     }
     
     .btn_menu{
@@ -1010,6 +1026,10 @@ x-button.volta{
 @media only screen  and (min-width: 375px) and (max-width: 485px){
      .btn_log{
         display: none;
+    }
+    
+    .item_menu_lougot{
+        display:flex;
     }
     
     .btn_menu{
@@ -1104,6 +1124,10 @@ x-button.volta{
     
     .btn_menu{
         display: block;
+    }
+    
+        .item_menu_lougot{
+        display:flex;
     }
     
     .btn_play{
@@ -1201,4 +1225,8 @@ x-button.volta{
     .btn_menu{
         margin-right: 5px;
     }
+    
+.item_menu_control{
+    display:flex;
+}
 }
