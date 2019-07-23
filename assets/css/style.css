@@ -1127,6 +1127,7 @@ x-button.volta{
         width: 120px;
         height: 120px;
         font-size: 72px;
+        margin-top: 20%;
     }
     
     .display_time{
@@ -1206,8 +1207,8 @@ x-button.volta{
     
     .panel_center{
         justify-content:flex-start;
-        padding-top: 100px;
-        
+        /*padding-top: 100px;*/
+       
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     }
