@@ -5,4 +5,5 @@ Programa para contagem de tempo.
 
 - Electron (https://electronjs.org/);
 - Photon (http://photonkit.com/);
-- Xel (https://xel-toolkit.org/).
+- Xel (https://xel-toolkit.org/);
+- JQuery (https://www.npmjs.com/package/jquery).
