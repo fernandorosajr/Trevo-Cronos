@@ -15,10 +15,18 @@ $(document).ready(function () {
         } else {
             remote.BrowserWindow.getFocusedWindow().maximize();
         }
+
+        $('.menu_balloon_popover').css({ display: "none" });
+        // var cor = $('.menu_balloon_popover').css("background-color");
+        // alert(cor);
+
     });
 
     $('.btnMinus').click(function () {
         remote.BrowserWindow.getFocusedWindow().minimize();
+
     });
+
+
 
 });

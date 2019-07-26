@@ -81,6 +81,7 @@ sidebar {
 
 .title_info:hover{
     font-weight: bold;
+    text-decoration: underline;
     color: darkgreen;
     background-color: rgba(8,84,113,0.2);
     
