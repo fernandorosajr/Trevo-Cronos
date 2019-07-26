@@ -1,3 +1,4 @@
+/*https://www.cssscript.com/touch-drag-rotate-resize-subjx/ */
 .toolbar {
     font-family: sans-serif;
     border: 0px solid black;
@@ -19,6 +20,7 @@
 .toolbar-prima{
     -webkit-app-region: drag;
 }
+
 
 sidebar {
     background-color: #f5f5f4;
@@ -67,7 +69,6 @@ sidebar {
 }
 
 .title{
-   
     line-height: 28px;
 }
 
@@ -75,6 +76,7 @@ sidebar {
     font-weight:bold;
     cursor: pointer;
     padding: 1px;
+    -webkit-app-region: no-drag;
 }
 
 .title_info:hover{
