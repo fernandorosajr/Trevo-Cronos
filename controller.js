@@ -9,6 +9,8 @@ $(document).ready(function () {
 
     $('.btnPlus').click(function () {
 
+        var ss = $('.menu_balloon_popover').removeAttr("opened")
+
         if (remote.BrowserWindow.getFocusedWindow().isMaximized()) {
             remote.BrowserWindow.getFocusedWindow().restore();
 
@@ -19,7 +21,6 @@ $(document).ready(function () {
         // alert($('.btn_menu').attr('expanded'));
         // console.log($('.btn_menu').attr('expanded'));
         // var ss = $('.btn_menu').removeAttr("expanded")
-        var ss = $('.menu_balloon_popover').removeAttr("opened")
         //$('.menu_balloon_popover').css({ opacity: 0.5 });
         //var teste = "{ display: 'none' }"
         //  if(
@@ -40,7 +41,6 @@ $(document).ready(function () {
 
     $('.btnMinus').click(function () {
         remote.BrowserWindow.getFocusedWindow().minimize();
-
     });
 
 });

@@ -43,10 +43,6 @@ sidebar {
     
 }
 
-.area_title div{
-/*    border: 1px solid forestgreen;*/
-}
-
 .label_title{
     padding: 4px;
     margin-left: 8px;
@@ -744,6 +740,10 @@ x-button.volta{
     font-size: 14px;
     text-align: center;
     text-transform: uppercase;
+}
+
+x-button[expanded] {
+    background: rgba(0, 0, 0, 0.0);
 }
 
 /* LAYOUT DE MENU FLUTUANTE */
