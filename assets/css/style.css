@@ -129,8 +129,9 @@ sidebar {
 }
 
 .btn_close{
-    margin-right: 2px;
+    margin-right: 4px;
 }
+
 
 .btn_close:hover{
     background-color: red;
@@ -401,6 +402,7 @@ x-button[toggled].btn{
     cursor: pointer;
 }
 
+/* BTN */
 .btn{
     /*width: 111px;
     height: 25px;*/
@@ -435,6 +437,7 @@ x-button[toggled].btn{
     -webkit-transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
 }
+
 
 x-button.btn_config{
     position: absolute; 
@@ -472,6 +475,7 @@ x-button[toggled].btn_config *{
     width: 15px;
     height: 25px;
 }
+
 
 .voltas{
     max-width: 461px;
@@ -802,6 +806,15 @@ x-button.volta{
 
 .window-content{
     overflow: hidden;
+}
+
+#btn-cancel, #btn-plus, #btn-minus {
+    border-color: #ccc;
+}
+
+.btn-group #btn-cancel:hover,.btn-group #btn-plus:hover, .btn-group #btn-minus:hover {
+    background-color: none !important;
+    color:#ccc !important;
 }
 
 @media only screen and (min-width: 697px) and (max-width: 749px) {

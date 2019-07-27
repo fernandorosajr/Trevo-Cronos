@@ -16,17 +16,31 @@ $(document).ready(function () {
             remote.BrowserWindow.getFocusedWindow().maximize();
         }
 
-        $('.menu_balloon_popover').css({ display: "none" });
+        // alert($('.btn_menu').attr('expanded'));
+        // console.log($('.btn_menu').attr('expanded'));
+        // var ss = $('.btn_menu').removeAttr("expanded")
+        var ss = $('.menu_balloon_popover').removeAttr("opened")
+        //$('.menu_balloon_popover').css({ opacity: 0.5 });
+        //var teste = "{ display: 'none' }"
+        //  if(
+        //    $('.menu_balloon_popover').css(teste)
+        //     != $('.menu_balloon_popover').css({ display: "none" })){
+        //     $('.menu_balloon_popover').css({ display: "none" })
+        //  } else {
+        //      $('.menu_balloon_popover').css({ display: "block" })
+        // }
         // var cor = $('.menu_balloon_popover').css("background-color");
         // alert(cor);
-
     });
+
+    $(".menu_balloon_popover").blur(function () {
+        //   $('.menu_balloon_popover').css({ display: "none" });
+    });
+
 
     $('.btnMinus').click(function () {
         remote.BrowserWindow.getFocusedWindow().minimize();
 
     });
-
-
 
 });
