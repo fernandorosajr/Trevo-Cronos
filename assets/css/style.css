@@ -128,7 +128,6 @@ sidebar {
     margin-right: 4px;
 }
 
-
 .btn_close:hover{
     background-color: red;
     border:  1px solid red;
@@ -208,13 +207,13 @@ sidebar {
     padding: 0;
     background-color: transparent;
     
-    transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
+    transition:  0.15s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
 }
 
 .btn_play:hover{
     background-color: rgba(255,255,255,0.6);
     
-    transition:  0.3s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
+    transition:  0.15s 0.1s all cubic-bezier(0.25, 0.1,0.25,1);
 }
 
 .btn_play:active{
@@ -480,7 +479,7 @@ x-button[toggled].btn_config *{
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin: 5px auto ;
+    margin: 5px auto;
     margin-top: 15px;
     
     border: 1px solid red;
