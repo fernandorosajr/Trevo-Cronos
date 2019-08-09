@@ -1,4 +1,10 @@
 /*https://www.cssscript.com/touch-drag-rotate-resize-subjx/ */
+.window{
+    border: #017BFF solid 1px;
+    border-top: none;
+    border-color: slategray;
+    border-color:#ccc;
+}
 .toolbar {
     font-family: sans-serif;
     border: 0px solid black;
