@@ -23,6 +23,9 @@
     padding: 0;
 }
 
+.toolbar-btn{
+    margin: auto;
+}
 .toolbar-prima{
     -webkit-app-region: drag;
 }
@@ -399,14 +402,16 @@ x-button[toggled].btn{
     */
 }
 
+/* BTN */
+
 .btn *{
     cursor: pointer;
 }
 
-/* BTN */
 .btn{
-    /*width: 111px;
-    height: 25px;*/
+    /*width: 111px; 
+    */
+    
     display:flex;
     cursor: pointer;
     box-sizing: border-box;
@@ -820,6 +825,11 @@ x-button[expanded] {
 .btn-group #btn-cancel:hover,.btn-group #btn-plus:hover, .btn-group #btn-minus:hover {
     background-color: none !important;
     color:#ccc !important;
+}
+
+.toolbar-btn x-button{
+    height: 24px !important;
+    min-height: 24px;
 }
 
 @media only screen and (min-width: 697px) and (max-width: 749px) {
