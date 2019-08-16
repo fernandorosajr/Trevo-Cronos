@@ -50,7 +50,6 @@ sidebar {
     display: flex;
     flex: 0 0 auto;
 /*border: 1px solid red;*/
-    
 }
 
 .label_title{
@@ -846,7 +845,6 @@ x-button[expanded] {
         align-items: stretch;
         flex-direction: column;
        
-        
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     }
@@ -952,13 +950,6 @@ x-button[expanded] {
         
         -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
- 
-        /*
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        top: 0;
-        */
     }
     
     .controles{
@@ -1189,7 +1180,7 @@ x-button[expanded] {
         width: 120px;
         height: 120px;
         font-size: 72px;
-        margin-top: 20%;
+        /*margin-top: 20%;*/
     }
     
     .display_time{
@@ -1556,8 +1547,8 @@ x-button[expanded] {
         transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     }
     
+
     /* FIM DE DISPLAY */
-    
     
     .panel_right{
         overflow:visible;
@@ -1644,6 +1635,7 @@ x-button[expanded] {
 @media only screen  and (min-height: 480px) and (max-height: 640px){
     .controles{
         height: 130px;
+        overflow: auto;
     }
 
 }
@@ -1651,6 +1643,12 @@ x-button[expanded] {
 @media only screen and (max-height: 480px){
     .controles{
         height: 80px;
+        overflow: auto;
     }
-
+    
+    .panel_center{
+        display: block;
+        padding-top: 40px;
+        
+    }
 }
