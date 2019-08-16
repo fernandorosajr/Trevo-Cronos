@@ -1,9 +1,10 @@
 /*https://www.cssscript.com/touch-drag-rotate-resize-subjx/ */
 .window{
-    border: #017BFF solid 1px;
+   /* border: #017BFF solid 1px;
     border-top: none;
     border-color: slategray;
     border-color:#ccc;
+    */
 }
 .toolbar {
     font-family: sans-serif;
@@ -1635,4 +1636,21 @@ x-button[expanded] {
     .item_menu_control{
         display:flex;
     }
+}
+
+
+/* HEIGHT */
+
+@media only screen  and (min-height: 480px) and (max-height: 640px){
+    .controles{
+        height: 130px;
+    }
+
+}
+
+@media only screen and (max-height: 480px){
+    .controles{
+        height: 80px;
+    }
+
 }
