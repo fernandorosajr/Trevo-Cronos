@@ -1172,7 +1172,7 @@ x-button[expanded] {
 }
 
 @media only screen and (min-width: 242px) and (max-width: 375px){
-     .btn_log{
+    .btn_log {
         display: none;
     }
     
