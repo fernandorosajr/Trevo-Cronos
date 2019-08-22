@@ -33,6 +33,10 @@ $(document).ready(function () {
         // var cor = $('.menu_balloon_popover').css("background-color");
         // alert(cor);
     });
+    
+    $('x-menuitem').click(function () {
+         var ss = $('.menu_balloon_popover').removeAttr("opened");
+    });
 
     $(".menu_balloon_popover").blur(function () {
         //   $('.menu_balloon_popover').css({ display: "none" });
