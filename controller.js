@@ -34,9 +34,16 @@ $(document).ready(function () {
         // alert(cor);
     });
     
-    $('x-menuitem').click(function () {
+    $('.menu_balloon_popover x-menuitem').click(function () {
          var ss = $('.menu_balloon_popover').removeAttr("opened");
     });
+    
+    $('.menu_balloon_popover_sub x-menuitem').click(function () {
+         var s = $('.menu_balloon_popover_sub').removeAttr("opened");
+        var s1= $('.btn_menu_sub').removeAttr("expanded");
+        
+    });
+        
 
     $(".menu_balloon_popover").blur(function () {
         //   $('.menu_balloon_popover').css({ display: "none" });
