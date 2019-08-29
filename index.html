@@ -751,7 +751,9 @@
                                     <div class="controle">
 
                                         <x-box>
-                                            <x-switch id="sw_duracao_do_tempo"></x-switch>
+                                            <x-switch id="sw_duracao_do_tempo"> 
+                                            
+                                            </x-switch>
                                             <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
                                                 <x-box vertical>
                                                     <strong>
@@ -1036,6 +1038,25 @@
                 </div>
 
             </div>
+        </div>
+        
+        <div class="modal">
+        <div class="wrap">
+        <main>
+            <h3>Use Google's location service?</h3>
+            <p>Let Google help apps determine location. This means sending anonymous location data to Google, even when no apps are running.</p>
+        </main>
+
+        <footer>
+            <x-button id="agree-button">
+                <x-label>Disagree</x-label>
+            </x-button>
+
+            <x-button toggled id="disagree-button">
+                <x-label>Agree</x-label>
+            </x-button>
+        </footer>
+        </div>
         </div>
     </div>
 
