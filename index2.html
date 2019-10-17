@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+
+    <script src="node_modules/jquery/dist//jquery.js">
+        window.$ = window.jQuery = require('jquery');
+    </script>
+    <script src="controller.js"></script>
+
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="layout/photon-0.1.2-alpha/photon-0.1.2-alpha/dist/css/photon.css" />
+
+    <link rel="stylesheet" href="node_modules/xel/themes/vanilla.css">
+    <script src="node_modules/xel/xel.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Trevo Cronos</title>
+</head>
+
+<body>
+    <div class="window">
+
+        <header class="toolbar toolbar-header">
+            <div class="area_title">
+                <div class="label_title">Trevo</div>
+                <div class="label)title2">Cronos</div>
+            </div>
+
+            <h1 class="title">***</h1>
+
+            <div class="">
+                <input type="button" class="btn_log" value="Lougot (usu)" />
+                <input type="button" class="btn_log" value="Settings" />
+                <input type="button" class="btn_log" value="Logar" />
+
+                <button class="btn_log btn_control">
+                    <span class="icon icon-minus"></span>
+                </button>
+
+                <button class="btn_log btn_control">
+                    <span class="icon icon-plus"></span>
+                </button>
+
+                <button class="btn_log btn_close">
+                    <span class="icon icon-cancel"></span>
+                </button>
+
+            </div>
+
+        </header>
+
+        <div class="window-content">
+            <x-button toggled togglable class="btn btn_config" style="z-index: 999">
+                <x-box>
+                    <span class="icon icon-tools"></span>
+                </x-box>
+            </x-button>
+            <div class="pane-group">
+
+                <div class="pane">
+                    <div class="container">
+
+                        <!--
+                        <div class="panel_left">
+
+                            <x-button toggled togglable class="btn btn_config">
+                                <x-box>
+                                    <span class="icon icon-tools"></span>
+                                </x-box>
+                            </x-button>
+
+                        </div>
+
+                        -->
+                        <div class="panel_center">
+                            <button class="btn_play">
+                                <span class="icon icon-play"></span>
+                            </button>
+
+                            <div class="display_crono">
+                                <div class="display_time">00: </div>
+                                <div class="display_time">00: </div>
+                                <div class="display_time display_ss">00, </div>
+                                <div class="display_time display_ms">00 </div>
+                            </div>
+
+                            <div class="display_detal_cronos">
+                                <div class="display_initial">00:00:00 </div>
+                                <div class="display_median">
+                                    <div class="progress_bar">00:00:00 </div>
+                                </div>
+                                <div class="display_end">00:00:00 </div>
+                            </div>
+
+                            <div class="display_btns">
+                                <button class="btn btn_laterais">-5m</button>
+
+                                <x-button toggled togglable class="btn">
+                                    <x-box>
+                                        <span class="icon icon-pause"></span>Pause
+                                    </x-box>
+                                    <x-notification timeout="2000">This notification will disappear after 2000
+                                        miliseconds.</x-notification>
+                                </x-button>
+
+                                <x-button toggled togglable class="btn">
+                                    <x-box>
+                                        <!--<x-icon name="home"></x-icon>
+                                        <x-label>Button</x-label>
+                                        -->
+                                        <span class="icon icon-pause"></span>
+                                        <span class="icon icon-clock" style="margin-right: 5px;"></span> Pause Counted
+                                    </x-box>
+                                    <x-notification timeout="2000">This notification will disappear after 2000
+                                        miliseconds.
+                                    </x-notification>
+                                </x-button>
+
+                                <button class="btn">
+                                    <span class="icon icon-stop"></span> Stop
+                                </button>
+
+                                <button class="btn btn_laterais">+5m </button>
+
+                            </div>
+                            <div class="voltas">
+
+                                <!-- Inicio da volta -->
+
+                                <div class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </div>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <x-button class="volta">
+                                    <x-popover modal style="--align: top;">
+                                        <main>
+                                            <x-label>Popover</x-label>
+                                        </main>
+                                    </x-popover>
+                                </x-button>
+
+                                <!-- Fim da Volta -->
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pane-sm sidebar panel_right">
+
+                    <div class="panel_config">
+                        <x-accordion expanded>
+                            <header>
+                                <x-label>
+                                    <div class="label">Pomodoro </div>
+                                </x-label>
+                            </header>
+
+                            <main>
+                                <x-label>Nome da volta:</x-label>
+
+                                <input type="text" class="txt_label" placeholder="Título da volta" />
+
+                                <div class="controle">
+
+                                    <x-box>
+                                        <x-switch id="sw_duracao_do_tempo"></x-switch>
+                                        <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
+                                            <x-box vertical>
+                                                <strong>
+
+                                                    Duração do tempo
+
+                                                </strong>
+                                                <span> 25 min</span>
+                                            </x-box>
+                                        </x-label>
+                                    </x-box>
+
+
+
+                                </div>
+
+                                <div class="controle">
+                                    <x-box>
+                                        <x-switch id="sw_intervalo"></x-switch>
+
+                                        <x-label for="sw_intervalo" id="label_intervalo">
+                                            <x-box vertical>
+                                                <strong>Intervalo:</strong>
+                                                <span>5m.</span>
+                                            </x-box>
+                                        </x-label>
+                                    </x-box>
+                                </div>
+
+                                <div class="controle">
+
+
+                                    <x-box>
+                                        <x-switch id="sw_intervalo_longo"></x-switch>
+
+                                        <x-label for="sw_intervalo_longo" id="label_intervalo_longo">
+                                            <x-box vertical>
+                                                <strong>Intervalo longo</strong>
+                                                <span>
+                                                    15min
+                                                </span>
+                                            </x-box>
+                                        </x-label>
+                                    </x-box>
+                                </div>
+
+
+                                <div class="controle ">
+
+                                    <x-box>
+                                        <x-switch id="sw_numero_de_voltas"></x-switch>
+
+                                        <x-label for="sw_numero_de_voltas" id="label_numero_de_voltas">
+                                            <x-box vertical>
+                                                <strong>Número de voltas</strong>
+                                                <span>3 voltas</span>
+                                            </x-box>
+                                        </x-label>
+                                    </x-box>
+                                </div>
+
+                                <div class="controle">
+
+
+                                    <x-box>
+                                        <x-switch id="sw_alarme"></x-switch>
+
+                                        <x-label for="sw_alarme" id="label_alarme">
+                                            <x-box vertical>
+                                                <strong> Alarme</strong>
+                                                <span>Tocar alarme ao término da volta</span>
+                                            </x-box>
+                                        </x-label>
+                                    </x-box>
+                                </div>
+
+                                <div class="controle">
+                                    <x-box>
+                                        <x-switch id="sw_data_inicial"></x-switch>
+
+                                        <x-box vertical>
+
+                                            <x-label for="sw_data_inicial" id="label_data_inicial">
+
+                                                <x-box vertical>
+                                                    <strong>Dia e hora do início da volta</strong>
+                                                    <span>[01/07/2019] - [15:00] </span>
+                                                </x-box>
+
+                                            </x-label>
+                                            <input type="date" />
+
+                                        </x-box>
+
+                                    </x-box>
+                                </div>
+
+                                <div class="controle">
+                                    <x-box>
+                                        <x-switch id="sw_repeticao"></x-switch>
+
+                                        <x-label for="sw_repeticao" id="label_repeticao">
+                                            <x-box vertical>
+                                                <strong>Repetição</strong>
+                                                <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
+                                            </x-box>
+                                        </x-label>
+                                    </x-box>
+                                </div>
+
+                                <div class="display_btns">
+                                    <div class="btn">Adicionar </div>
+                                    <div class="btn">Fechar </div>
+                                </div>
+
+
+                            </main>
+                        </x-accordion>
+
+                    </div>
+
+                    <div class="panel_list">
+
+                        <header>
+                            <x-label class="label">
+                                Listas salvas
+                            </x-label>
+                        </header>
+
+                        <main>
+
+                            <div class="listbox">
+
+                                <div class="item_list activo">
+                                    <span class="icon icon-clock"></span>
+                                    <div class="list_title">
+                                        MalhaçãoOutrasinformaçõesparacrescer
+                                    </div>
+                                    <div class="date_list">
+                                        [seg - qua - sex]
+                                    </div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-play"></span>
+                                    <div class="list_title">Almoço da firma</div>
+                                    <div class="date_list">
+                                        [03/jan/20 - 12:00]
+                                    </div>
+                                </div>
+
+                                <div class="item_list ">
+                                    <span class="icon icon-pause"></span>
+                                    <div class="list_title">Malhação</div>
+                                    <div class="date_list">[seg - qua - sex]</div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-clock"></span>
+                                    <div class="list_title">
+                                        MalhaçãoOutrasinformaçõesparacrescer
+                                    </div>
+                                    <div class="date_list">
+                                        [seg - qua - sex]
+                                    </div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-play"></span>
+                                    <div class="list_title">Almoço da firma</div>
+                                    <div class="date_list">
+                                        [03/jan/20 - 12:00]
+                                    </div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-pause"></span>
+                                    <div class="list_title">Malhação</div>
+                                    <div class="date_list">[seg - qua - sex]</div>
+                                </div>
+                                <div class="item_list">
+                                    <span class="icon icon-clock"></span>
+                                    <div class="list_title">
+                                        MalhaçãoOutrasinformaçõesparacrescer
+                                    </div>
+                                    <div class="date_list">
+                                        [seg - qua - sex]
+                                    </div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-play"></span>
+                                    <div class="list_title">Almoço da firma</div>
+                                    <div class="date_list">
+                                        [03/jan/20 - 12:00]
+                                    </div>
+                                </div>
+
+                                <div class="item_list ">
+                                    <span class="icon icon-pause"></span>
+                                    <div class="list_title">Malhação</div>
+                                    <div class="date_list">[seg - qua - sex]</div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-clock"></span>
+                                    <div class="list_title">
+                                        MalhaçãoOutrasinformaçõesparacrescer
+                                    </div>
+                                    <div class="date_list">
+                                        [seg - qua - sex]
+                                    </div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-play"></span>
+                                    <div class="list_title">Almoço da firma</div>
+                                    <div class="date_list">
+                                        [03/jan/20 - 12:00]
+                                    </div>
+                                </div>
+
+                                <div class="item_list">
+                                    <span class="icon icon-pause"></span>
+                                    <div class="list_title">Malhação</div>
+                                    <div class="date_list">[seg - qua - sex]</div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
