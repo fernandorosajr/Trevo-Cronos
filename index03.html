@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+    <script src="controller.js"></script>
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="layout/photon-0.1.2-alpha/photon-0.1.2-alpha/dist/css/photon.css" />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <title>Trevo Cronos</title>
+</head>
+<body>
+    
+    
+</body>
+    <div class="window">
+    
+        <header class="toolbar toolbar-header">
+           <div class="area_title toolbar-prima">
+                <div class="label_title">Trevo</div>
+                <div class="label_title2">Cronos</div>
+            </div>
+
+            <h1 class="title toolbar-prima">
+                | Malhação
+                <span class="title_info">
+                    [ seg - qua - sex ]
+                </span>
+            </h1>
+
+            <div class="toobar_settings">
+
+                <input type="button" class="btn_titlebar btn_log" value="Lougot (usu)" />
+                <input type="button" class="btn_titlebar btn_log" value="Settings" />
+                <input type="button" class="btn_titlebar btn_log" value="Logar" />
+
+                <!-- INICIO DE BRT_MENU -->
+                <button class="btn_titlebar btn_control btn_menu">
+                    <x-icon name="menu"></x-icon>
+                    
+                </button>
+                
+                
+                <div class="menu_balloon_popover">
+                        <main>
+                            <x-menu class="menu_popover" opened>
+                                <x-menuitem>
+                                    <x-icon name="alarm-add"></x-icon>
+                                    <x-label>
+                                        <!--<span class="icon icon-clock"></span>-->Add Time
+                                    </x-label>
+
+                                    <x-menu class="menu_balloon_popover">
+                                        
+                                        <x-menuitem>
+                                            <x-icon name="timer"></x-icon>
+                                            <x-label>
+                                                Cronômetro
+                                            </x-label>
+                                            <x-shortcut value="Control+R"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <hr />
+
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-clock"></span> Temporalizador
+                                            </x-label>
+                                            <x-shortcut value="Control+T"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-hourglass"></span> Pomodoro
+                                            </x-label>
+                                            <x-shortcut value="Control+P"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-bell"></span> Alarme
+                                            </x-label>
+                                            <x-shortcut value="Control+L"></x-shortcut>
+                                        </x-menuitem>
+
+                                        <x-menuitem>
+                                            <x-label>
+                                                <span class="icon icon-infinity"></span> Ilimitado
+                                            </x-label>
+                                            <x-shortcut value="Control+I"></x-shortcut>
+                                        </x-menuitem>
+                                    </x-menu>
+                                </x-menuitem>
+
+                                <hr />
+
+                                <x-menuitem class="item_menu_lougot">
+                                    <x-icon name="person"></x-icon>
+                                    <x-label>
+                                        Data Usu
+                                    </x-label>
+                                </x-menuitem>
+
+                                <x-menuitem class="item_menu_lougot">
+                                    <x-label>
+                                        <span class="icon icon-logout"></span> Lougot (usu)
+                                    </x-label>
+                                </x-menuitem>
+
+                                <hr class="item_menu_lougot" />
+
+                                <x-menuitem>
+                                    <x-label>
+                                        <span class="icon icon-cog"></span>Settings
+                                    </x-label>
+                                </x-menuitem>
+
+                                <hr class="item_menu_control" />
+
+                                <x-menuitem class="item_menu_control btnPlus">
+                                    <x-label>
+                                        <span class="icon icon-plus "></span>Maximize
+                                    </x-label>
+                                </x-menuitem>
+
+                                <x-menuitem class="item_menu_control btnPlus">
+                                    <x-label>
+                                        <span class="icon icon-plus"></span> Restaure
+                                    </x-label>
+                                </x-menuitem>
+
+                                <x-menuitem class="item_menu_control btnMinus">
+                                    <x-label>
+                                        <span class="icon icon-minus"></span> Minimize
+                                    </x-label>
+                                </x-menuitem>
+
+                                <x-menuitem class="item_menu_control btnCancel">
+                                    <x-label>
+                                        <span class="icon icon-cancel"></span> Close
+                                    </x-label>
+                                </x-menuitem>
+
+                                <hr />
+
+                                <x-menuitem>
+                                    <x-icon class="" name="info"></x-icon>
+                                    <x-label>
+                                        About Trevo Cronos
+                                    </x-label>
+                                </x-menuitem>
+
+                            </x-menu>
+                        </main>
+                    </div>
+                <!-- FIM DE BTN_MENU -->
+
+                <div class="btn-group">
+                    <button id="btn-minus" class="btn btnMinus btn_titlebar btn_control btn_window">
+                        <span class="icon icon-minus"></span>
+                    </button>
+
+                    <button id="btn-plus" class=" btn btnPlus btn_titlebar btn_control btn_window">
+                        <span class="icon icon-plus"></span>
+                    </button>
+
+                    <button id="btn-cancel" class="btn btnCancel btn_titlebar btn_close btn_window">
+                        <span class="icon icon-cancel"></span>
+                    </button>
+                </div>
+            </div>
+            
+        </header>
+    </div>
+</html>
