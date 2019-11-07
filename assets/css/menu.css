@@ -79,6 +79,7 @@
     transform: rotate(45deg);
      background-color: #eee;
      box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
+    z-index: 0;
     
 }
 
@@ -87,5 +88,5 @@
     top: 14px;
     right: -8;
     box-shadow: rgba(0, 0, 0, 0.3) 1px -1px 0px;
-    
+    z-index: 0;
 }
