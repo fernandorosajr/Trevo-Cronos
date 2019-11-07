@@ -11,7 +11,7 @@
      background-color: #eee;
     color: rgba(8,84,113,0.7);    
     list-style:none;
-    padding: 4px 0;
+    padding: 9px 0;
     margin: 4px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 22px;
     border: 1px solid rgba(0, 0, 0, 0.25)
@@ -48,6 +48,7 @@
     color: rgba(8,84,113,0.9);
     -webkit-transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
+    z-index: 9999999;
 }
 
 .menu_ ul li ul{
@@ -62,4 +63,29 @@
     right: 15px;
     line-height: 28px;
     margin-top: 7px;
+}
+
+.balao{
+    position:static;
+}
+
+.balao:before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    left: 54px;
+    top: -3px;
+    transform: rotate(45deg);
+     background-color: #eee;
+     box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
+    
+}
+
+.balao .balao_esq:before{
+    left: auto;
+    top: 14px;
+    right: -8;
+    box-shadow: rgba(0, 0, 0, 0.3) 1px -1px 0px;
+    
 }
