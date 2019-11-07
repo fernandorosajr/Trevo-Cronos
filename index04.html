@@ -16,6 +16,7 @@
     <script src="node_modules/xel/xel.min.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/menu.css" />
     <title>Trevo Cronos</title>
 </head>
 
@@ -30,7 +31,7 @@
             </div>
             
             <!-- Informação-tittulo do Cronometro ativo -->
-            <h1 class=" title toolbar-prima">
+            <h1 class="title toolbar-prima">
                 | Malhação
                 <span class="title_info">
                     [ seg - qua - sex]
@@ -38,20 +39,21 @@
             </h1>
                 
             <!-- Barra de botoes de controle -->
-            <div class="toolbar_settings">
-                <input type="button" class="btn_titlebar btn_log" value="Lougot (usu)"/>
-                <input type="button" class="btn_titlebar btn_log" value="Settings"/>
-                <input type="button" class="btn_titlebar btn_log" value="Logar"/>
-                    
+            <div class="toobar_settings">
+                <input type="button" class="btn_titlebar btn_log" value="Lougot (usu)" />
+                <input type="button" class="btn_titlebar btn_log" value="Settings" />
+                <input type="button" class="btn_titlebar btn_log" value="Logar" />
+                
+                
                 <!-- INICIO DE BTNMENU-->
                 <button class="btn_titlebar btn_control btn_menu"><!--Por aqui o icone de menu -->MENU</button>
-                <div class="menu_balloon_popover" style="position:absolute; z-index:999999999; background-color: aqua">
+                <div class="menu_balloon_popover menu_" style=" top:0; right: 0px; margin-top: 30px; position:absolute; z-index:999999999;">
                     <ul>
                         <li>Add Time
                             <div class="menu_balloon_popover">
                                 <ul>
                                     <li>Cronômetro</li>
-                                    <li><hr/></li>
+                                    <hr/>
                                     <li>Temporalizador</li>
                                     <li>Pomodoro</li>
                                     <li>Alarme</li>
@@ -61,31 +63,56 @@
                                 
                             </div>
                         </li>
-                        <li class="item_menu_lougot__">Data Uso</li>
+                        <li class="item_menu_lougot__">Data Usu</li>
                         <li class="item_menu_lougot__">
                             <span class="icon icon-logout"></span>
                             Lougot (usu)
                         </li>
-                        <li class="item_menu_lougo">
+                        <li class="item_menu_lougot__">
                             <span class="icon icon-cog"></span>
                             Settings
                         </li>
-                        <li><hr /></li>
+                        <hr />
                         <!-- Icones Maximize,Minimize, Restaure , close -->
-                        <li class="item_menu_control__">
+                        <li class="item_menu_control__ btnPlus">
                             <span class="icon icon-plus"></span>
                             Maximize
                         </li>
-                        <li class="item_menu_control__">
+                        <li class="item_menu_control__ btnPlus">
                             <span class="icon icon-plus"></span>
                             Restaure
                         </li>
-                        <li class="item_menu_control__">
+                        <li class="item_menu_control__ btnMinus">
                             <span class="icon icon-minus"></span>
                             Minimize
                         </li>
+                        <li class="item_menu_control__ btnCancel">
+                            <span class="icon icon-cancel"></span>
+                            Close
+                        </li>
+                        <hr/>
+                        <li>
+                            About Trevo Cronos
+                        </li>
                     </ul>
                 </div>
+                <!-- FIM DE BTN_MENU -->
+                
+                <!-- Grupo de botão maximize, close -->
+                <div class="btn-group">
+                    <button id="btn-minus" class="btn btnMinus btn_titlebar btn_control btn_window">
+                        <span class="icon icon-minus"></span>
+                    </button>
+                    
+                    <button id="btn-plus" class="btn btnPlus btn_titlebar btn_control btn_window">
+                        <span class="icon icon-plus"></span>
+                    </button>
+                    
+                    <button id="btn-cancel" class="btn btnCancel btn_titlebar btn_control btn_window btn_close">
+                        <span class="icon icon-cancel"></span>
+                    </button>
+                </div>
+                
             </div>
         </header>
     </div>
