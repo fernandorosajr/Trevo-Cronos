@@ -1,6 +1,7 @@
 <html>
+
 <head>
-<meta charset="utf-8">
+    <meta charset="utf-8">
 
     <script>
         window.$ = window.jQuery = require('jquery');
@@ -23,13 +24,13 @@
 <body>
     <div class="window">
         <header class="toolbar toolbar-header">
-            
+
             <!-- Titulo do programa -->
             <div class="area_title toolbar-prima">
                 <div class="label_title">Trevo</div>
                 <div class="label_title2">Cronos</div>
             </div>
-            
+
             <!-- Informação-tittulo do Cronometro ativo -->
             <h1 class="title toolbar-prima">
                 | Malhação
@@ -37,17 +38,18 @@
                     [ seg - qua - sex]
                 </span>
             </h1>
-                
+
             <!-- Barra de botoes de controle -->
             <div class="toobar_settings">
                 <input type="button" class="btn_titlebar btn_log" value="Lougot (usu)" />
                 <input type="button" class="btn_titlebar btn_log" value="Settings" />
                 <input type="button" class="btn_titlebar btn_log" value="Logar" />
-                
-                
+
                 <!-- INICIO DE BTNMENU-->
-                <button class="btn_titlebar btn_control btn_menu"><!--Por aqui o icone de menu --><span class="icon icon-menu"></span></button>
-                <div class="menu_balloon_popover menu_" style=" top:0; right: 0px; margin-top: 30px; position:absolute; z-index:999999999;">
+                <button class="btn_titlebar btn_control btn_menu">
+                    <!--Por aqui o icone de menu --><span class="icon icon-menu"></span></button>
+                <div class="menu_balloon_popover menu_"
+                    style=" top:0; right: 0px; margin-top: 30px; position:absolute; z-index:999999999;">
                     <ul class="balao">
                         <li>
                             <span class="icon icon-plus-circled"></span>
@@ -59,7 +61,7 @@
                                         <span class="icon icon-clock"></span>
                                         Cronômetro
                                     </li>
-                                    <hr/>
+                                    <hr />
                                     <li>
                                         <span class="icon icon-hourglass"></span>
                                         Temporalizador
@@ -76,8 +78,7 @@
                                         Ilimitado
                                     </li>
                                 </ul>
-                               
-                                
+
                             </div>
                         </li>
                         <li class="item_menu_lougot__">
@@ -93,6 +94,7 @@
                             Settings
                         </li>
                         <hr />
+
                         <!-- Icones Maximize,Minimize, Restaure , close -->
                         <li class="item_menu_control__ btnPlus">
                             <span class="icon icon-plus"></span>
@@ -110,7 +112,7 @@
                             <span class="icon icon-cancel"></span>
                             Close
                         </li>
-                        <hr/>
+                        <hr />
                         <li>
                             <span class="icon icon-info-circled"></span>
                             About Trevo Cronos
@@ -118,24 +120,25 @@
                     </ul>
                 </div>
                 <!-- FIM DE BTN_MENU -->
-                
+
                 <!-- Grupo de botão maximize, close -->
                 <div class="btn-group">
                     <button id="btn-minus" class="btn btnMinus btn_titlebar btn_control btn_window">
                         <span class="icon icon-minus"></span>
                     </button>
-                    
+
                     <button id="btn-plus" class="btn btnPlus btn_titlebar btn_control btn_window">
                         <span class="icon icon-plus"></span>
                     </button>
-                    
+
                     <button id="btn-cancel" class="btn btnCancel btn_titlebar btn_control btn_window btn_close">
                         <span class="icon icon-cancel"></span>
                     </button>
                 </div>
-                
+
             </div>
         </header>
     </div>
 </body>
+
 </html>
