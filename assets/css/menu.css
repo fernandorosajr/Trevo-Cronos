@@ -1,89 +1,101 @@
-.menu_{  
+.menu_ {
+    position: absolute;
     text-align: left;
-    display: flex;
+    display: none;
     font-size: 12px;
     font-weight: 400;
     font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    top: 0px;
+    right: 0px;
+    margin-top: 26px;
+
+    padding-top: 5px;
+    z-index: 999999999;
 }
 
-.menu_ ul{
-     border: 1px solid #ACACAC;
-     background-color: #eee;
-    color: rgba(8,84,113,0.7);    
-    list-style:none;
+.btn_menuPrima:hover .menu_ {
+    display: flex;
+}
+
+.menu_ ul {
+    border: 1px solid #ACACAC;
+    background-color: #eee;
+    color: rgba(8, 84, 113, 0.7);
+    list-style: none;
     padding: 9px 0;
     margin: 4px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 22px;
     border: 1px solid rgba(0, 0, 0, 0.25)
 }
 
-.menu_ ul li{
-      cursor: pointer;
-    margin:0px 0px;
+.menu_ ul li {
+    cursor: pointer;
+    margin: 0px 0px;
     min-height: 28px;
     line-height: 28px;
-   padding: 0 12px 0 23px;
-   /* border: 1px solid;*/
+    padding: 0 12px 0 23px;
+    /* border: 1px solid;*/
     --open-transition: none;
 }
 
-.menu_ ul li .icon{
+.menu_ ul li .icon {
     font-weight: bold;
     font-size: 16px;
     margin-right: 5px;
 }
 
-.btn_menu{
+.btn_menu {
     font-size: 16px;
     cursor: pointer;
 }
 
-.btn_menu .icon{
+.btn_menu .icon {
     cursor: pointer;
 }
 
-.menu_ ul li:hover{
+.menu_ ul li:hover {
     cursor: pointer;
-    background-color: rgba(255,255,255,0.6);
-    color: rgba(8,84,113,0.9);
-    -webkit-transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
-    transition: 0.2s 0s all cubic-bezier(0.25,0.1,0.25,1);
+    background-color: rgba(255, 255, 255, 0.6);
+    color: rgba(8, 84, 113, 0.9);
+    -webkit-transition: 0.2s 0s all cubic-bezier(0.25, 0.1, 0.25, 1);
+    transition: 0.2s 0s all cubic-bezier(0.25, 0.1, 0.25, 1);
     z-index: 9999999;
 }
 
-.menu_ ul li ul{
+.menu_ ul li ul {
     position: absolute;
-    top: 0;
+    top: 7px;
     right: 165px;
     width: 150px;
     z-index: 999;
 }
+
 .seta {
-    position:absolute;
+    position: absolute;
     right: 15px;
     line-height: 28px;
     margin-top: 7px;
 }
 
-.balao{
-    position:static;
+.balao {
+    position: static;
 }
 
-.balao:before{
+.balao:before {
     content: '';
     position: absolute;
     width: 16px;
     height: 16px;
     left: 54px;
-    top: -3px;
+    top: 2px;
     transform: rotate(45deg);
-     background-color: #eee;
-     box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
+    background-color: #eee;
+    box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
     z-index: 0;
-    
+
 }
 
-.balao .balao_esq:before{
+.balao .balao_esq:before {
     left: auto;
     top: 14px;
     right: -8;

@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
     const app = require('electron').remote.app;
-    const { remote } = require('electron');
+    const {
+        remote
+    } = require('electron');
 
     $('.btnCancel').click(function () {
         remote.BrowserWindow.getFocusedWindow().close();
@@ -33,17 +35,17 @@ $(document).ready(function () {
         // var cor = $('.menu_balloon_popover').css("background-color");
         // alert(cor);
     });
-    
+
     $('.menu_balloon_popover x-menuitem').click(function () {
-         var ss = $('.menu_balloon_popover').removeAttr("opened");
+        var ss = $('.menu_balloon_popover').removeAttr("opened");
     });
-    
+
     $('.menu_balloon_popover_sub x-menuitem').click(function () {
-         var s = $('.menu_balloon_popover_sub').removeAttr("opened");
-        var s1= $('.btn_menu_sub').removeAttr("expanded");
-        
+        var s = $('.menu_balloon_popover_sub').removeAttr("opened");
+        var s1 = $('.btn_menu_sub').removeAttr("expanded");
+
     });
-        
+
 
     $(".menu_balloon_popover").blur(function () {
         //   $('.menu_balloon_popover').css({ display: "none" });
@@ -52,6 +54,10 @@ $(document).ready(function () {
 
     $('.btnMinus').click(function () {
         remote.BrowserWindow.getFocusedWindow().minimize();
+    });
+
+    $('.btn_menuPrima').click(function () {
+
     });
 
 });
