@@ -17,13 +17,11 @@
     display: none;
 }
 
-item_add_time:hover .sub_menu_{
-display: flex;
-    
-    
+.btn_menuPrima:hover .menu_ {
+    display: flex;
 }
 
-.btn_menuPrima:hover .menu_ {
+.item_add_time:hover .sub_menu_ {
     display: flex;
 }
 
