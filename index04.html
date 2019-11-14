@@ -5,7 +5,17 @@
 
     <script>
         window.$ = window.jQuery = require('jquery');
+        
     </script>
+    <style>
+    .mostrar_item{
+    display: flex;
+}                          
+
+.ocultar_item{
+    display: none;
+}
+    </style>
     <script src="controller.js"></script>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,7 +58,7 @@
                 <button class="btn_titlebar btn_control btn_menu btn_menuPrima">
                     <!--Por aqui o icone de menu --><span class="icon icon-menu"></span>
 
-                    <div class="menu_balloon_popover menu_">
+                    <div id="menu" class="menu_balloon_popover menu_">
                         <ul class="balao">
                             <li class="item_add_time">
                                 <span class="icon icon-plus-circled"></span>
