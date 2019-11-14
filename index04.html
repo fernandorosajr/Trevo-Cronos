@@ -7,15 +7,7 @@
         window.$ = window.jQuery = require('jquery');
         
     </script>
-    <style>
-    .mostrar_item{
-    display: flex;
-}                          
-
-.ocultar_item{
-    display: none;
-}
-    </style>
+    
     <script src="controller.js"></script>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,6 +20,7 @@
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/menu.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/form_style.css" />
     <title>Trevo Cronos</title>
 </head>
 
@@ -151,6 +144,70 @@
 
             </div>
         </header>
+        
+        <div class="window-content">
+        
+            <!-- Botao Config: expande e comprime o panel dir -->
+            <h2 class="label_btn_config">Configurações</h2>
+            <button  class="btn btn_config" style="z-index: 999">
+                <span class="icon icon-tools"></span>
+            </button>
+            
+            <!-- 
+            <x-button toggled togglable class="btn btn_config" style="z-index: 999">
+                <x-box>
+                    <span class="icon icon-tools"></span>
+                </x-box>
+            </x-button>
+            -->
+            
+            <div class="pane-group">
+                <div class="pane">
+                    <div class="container">
+                        <div class="panel_center">
+                            <button class="btn_play">
+                                <span class="icon icon-play"></span>
+                            </button>
+                            <!-- Inicio do display -->
+                            <div class="display_crono">
+                                <div class="display_time">00: </div>
+                                <div class="display_time">00: </div>
+                                <div class="display_time display_ss">00,</div> <div class="display_time display_ms">00</div>    
+                            </div>
+                            
+                            <div class="display_detal_cronos">
+                               
+                                <div class="display_initial">
+                                    <div class="display_initial_title">
+                                        Initial:
+                                    </div>
+                                    <span class="display_initial_value">
+                                        00:00:00
+                                    </span>
+                                </div>
+                                
+                                <div class="display_median">
+                                    <div class="progress_bar">
+                                        <span class="progress_bar_value"> 00:00:00</span>
+                                    </div>
+                                </div>
+                                
+                                <div class="display_end">
+                                    <div class="display_initial_title">
+                                        Final:
+                                    </div>
+                                    <span class="display_end_value">
+                                        00:00:00
+                                    </span>
+                                </div>
+                            </div>
+                            <!-- FINAL DE DISPLAY -->
+                      
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 
