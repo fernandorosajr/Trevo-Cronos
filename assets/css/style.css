@@ -498,12 +498,12 @@ x-button[toggled].btn_config *{
     -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     transition: 0.5s 0.1s all cubic-bezier(0.25,0.1,0.25,1);
     
-    display: none;
 }
 
-x-button.volta{
+.volta{
     width: 16px;
     height: 16px;
+    border-radius: 8px;
     box-sizing: border-box;
     background-color: rgba(23,190,4, 0.7);
     margin: 1px;
