@@ -1,0 +1,34 @@
+.modal_volta{
+    width: 340px;
+    z-index: 100;
+    position: absolute;
+    background-color: #eee;
+    padding: 5px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 22px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+}
+
+.modal_volta:before {
+    
+    width: 16px;
+    height: 16px;
+    margin: auto;
+    left:47%;
+    bottom: -8px;
+    
+    content: '';
+    transform: rotate(-135deg);
+      box-shadow: rgba(0, 0, 0, 0.25) -1px -1px 0px;
+    z-index: 0;
+    
+    background : -webkit-linear-gradient(left top,#eee 50%, rgba(255, 255, 255, 0) 50%);
+    background : -o-linear-gradient(left top,#eee 50%, rgba(129, 39, 39, 0) 50%);
+    background : -ms-linear-gradient(left top,#eee 50%, rgba(129, 39, 39, 0) 50%);
+
+    background : -linear-gradient(left top,#eee 50%, rgba(129, 39, 39, 0) 50%);
+    position: absolute;
+    
+
+    
+}
