@@ -17,10 +17,8 @@
     display: none;
 }
 
-item_add_time:hover .sub_menu_{
+.item_add_time:hover .sub_menu_{
 display: flex;
-    
-    
 }
 
 .btn_menuPrima:hover .menu_ {
@@ -46,12 +44,15 @@ display: flex;
     padding: 0 12px 0 23px;
     /* border: 1px solid;*/
     --open-transition: none;
+    
 }
 
 .menu_ ul li .icon {
     font-weight: bold;
     font-size: 16px;
     margin-right: 5px;
+    margin: 6px;
+   
 }
 
 .btn_menu {
@@ -76,9 +77,11 @@ display: flex;
     color: #eee;
     background-color: rgba(8, 84, 113, 0.7);;
 }
+
+
 .menu_ ul li ul {
     position: absolute;
-    top: 7px;
+    top: 5px;
     right: 165px;
     width: 150px;
     z-index: 999;
