@@ -57,7 +57,10 @@ $(document).ready(function () {
     });
 
     $('.btn_menuPrima').click(function () {
-
+        var element = document.getElementById("menu");
+        element.classList.add("mostrar_item");
+    
+        /*$('#menu').addClass('mostrar_item')*/
     });
 
 });
