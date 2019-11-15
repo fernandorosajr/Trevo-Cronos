@@ -17,13 +17,13 @@
     display: none;
 }
 
-<<<<<<< HEAD
 .item_add_time:hover .sub_menu_{
 display: flex;
-=======
+}
+    
 .btn_menuPrima:hover .menu_ {
     display: flex;
->>>>>>> fd49bc063787e544dd8225fc67bc0e59debe991b
+
 }
 
 .item_add_time:hover .sub_menu_ {
