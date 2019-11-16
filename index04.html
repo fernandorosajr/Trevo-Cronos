@@ -5,9 +5,8 @@
 
     <script>
         window.$ = window.jQuery = require('jquery');
-        
     </script>
-    
+
     <script src="controller.js"></script>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -93,7 +92,7 @@
                                 <span class="icon icon-logout"></span>
                                 Lougot (usu)
                             </li>
-                            <hr  class="item_menu_lougot" />
+                            <hr class="item_menu_lougot" />
                             <li class="item_menu_lougot">
                                 <span class="icon icon-cog"></span>
                                 Settings
@@ -101,7 +100,7 @@
 
                             <hr class="item_menu_control" />
 
-                            <hr class="item_menu_control"/>
+                            <hr class="item_menu_control" />
 
 
                             <!-- Icones Maximize,Minimize, Restaure , close -->
@@ -149,15 +148,15 @@
 
             </div>
         </header>
-        
+
         <div class="window-content">
-        
+
             <!-- Botao Config: expande e comprime o panel dir -->
             <h2 class="label_btn_config">Configurações</h2>
-            <button  class="btn btn_config" style="z-index: 999">
+            <button class="btn btn_config" style="z-index: 999">
                 <span class="icon icon-tools"></span>
             </button>
-            
+
             <!-- 
             <x-button toggled togglable class="btn btn_config" style="z-index: 999">
                 <x-box>
@@ -165,7 +164,7 @@
                 </x-box>
             </x-button>
             -->
-            
+
             <div class="pane-group">
                 <div class="pane">
                     <div class="container">
@@ -177,11 +176,12 @@
                             <div class="display_crono">
                                 <div class="display_time">00: </div>
                                 <div class="display_time">00: </div>
-                                <div class="display_time display_ss">00,</div> <div class="display_time display_ms">00</div>    
+                                <div class="display_time display_ss">00,</div>
+                                <div class="display_time display_ms">00</div>
                             </div>
-                            
+
                             <div class="display_detal_cronos">
-                               
+
                                 <div class="display_initial">
                                     <div class="display_initial_title">
                                         Initial:
@@ -190,13 +190,13 @@
                                         00:00:00
                                     </span>
                                 </div>
-                                
+
                                 <div class="display_median">
                                     <div class="progress_bar">
                                         <span class="progress_bar_value"> 00:00:00</span>
                                     </div>
                                 </div>
-                                
+
                                 <div class="display_end">
                                     <div class="display_initial_title">
                                         Final:
@@ -207,12 +207,12 @@
                                 </div>
                             </div>
                             <!-- FINAL DE DISPLAY -->
-                            
+
                             <!-- INICIO DE GRUPO DE BOTÔES DE CONTROLE -->
                             <div class="display_btns btn-group">
                                 <button class="btn btn_laterais">-5</button>
                                 <button class="btn">Flag [volta]</button>
-                                
+
                                 <button class="btn">
                                     <span class="icon icon-pause"></span>
                                     <span class="btn_texto">Pause</span>
@@ -221,32 +221,32 @@
                                         miliseconds.</x-notification>
                                     -->
                                 </button>
-                                
+
                                 <button class="btn">
                                     <x-icon name=snooze></x-icon>
                                     <span class="btn_texto">Pausa contada</span>
-                                    
+
                                     <!-- <x-notification timeout="2000">This notification will disappear after 2000
                                         miliseconds.
                                     </x-notification> -->
                                 </button>
-                                
+
                                 <button class="btn">
                                     <span class="icon icon-stop"></span>
                                     <span class="btn_texto">Stop Parar</span>
                                 </button>
-                                
+
                                 <button class="btn btn_laterais"> +5 </button>
                             </div>
-                             <!-- FINAL DE GRUPO DE BOTÔES DE CONTROLE -->
+                            <!-- FINAL DE GRUPO DE BOTÔES DE CONTROLE -->
                             <!-- INICIO DE Conteiner VOLTAS -->
-                            <div class="voltas">                         
+                            <div class="voltas">
                                 <button class="volta"></button>
-                                
+
                                 <button class="volta"></button>
-                                
+
                                 <button class="volta"></button>
-    
+
                                 <button class="volta"></button>
                             </div>
                             <!-- FINAL DE Conteiner VOLTAS -->
@@ -257,11 +257,28 @@
         </div>
         <!-- modalS -->
         <div class="modal_volta">
-            Modal Volta
+            <section>
+                <header>
+                    <h3>MALHAÇÃO</h3>
+                </header>
+
+                <div>
+                    <p>
+                        Pomodoro
+                        Completo
+                        <span class="icon icon-check"></span>
+                    </p>
+                </div>
+                <div>
+                    <p>Duração: <span>25 min</span></p>
+                    <p>Início: <span>05/09/2020 - 02:05</span></p>
+                    <p>Final: <span>05/09/2020 - 02:05</span></p>
+                </div>
+            </section>
         </div>
     </div>
-    
-    
+
+
 </body>
 
 </html>
