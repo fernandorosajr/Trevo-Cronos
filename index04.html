@@ -16,6 +16,8 @@
 
     <link rel="stylesheet" href="node_modules/xel/themes/vanilla.css">
     <script src="node_modules/xel/xel.min.js"></script>
+    
+    <script src="assets/script/jquery.js"></script>
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="assets/css/menu.css" />
@@ -253,6 +255,46 @@
                         </div>
                     </div>
                 </div>
+                
+                <!-- Panel Direito -->
+                <div class="pane-sm sidebar panel_right">
+                    <div class="panel_config">
+                        <div class="expanded">
+                            <header>
+                                <div class="label">
+                                    Pomodoro
+                                    </div>
+                            </header>
+                            <main>
+                                <h4 class="label_2">Nome da volta:</h4>
+                                
+                                <input type="text" class="txt_label"  placeholder="Título da volta"/>
+                                
+                                <div class="controles">
+                                        <div class="controle">
+
+                                        <x-box>
+                                            <x-switch id="sw_duracao_do_tempo"> 
+                                            
+                                            </x-switch>
+                                            <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
+                                                <x-box vertical>
+                                                    <strong>
+                                                        Duração do tempo
+                                                    </strong>
+                                                    <span> 25 min</span>
+                                                </x-box>
+                                            </x-label>
+                                        </x-box>
+
+                                    </div>
+                                </div>
+                                
+                            </main>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
         <!-- modalS -->
