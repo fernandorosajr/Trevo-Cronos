@@ -1,10 +1,4 @@
 
-.volta:hover .modal_volta{
-    display: block;
-    background-color: fuchsia;
-}
-
-
 .modal_volta{
     display: none;
 font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
@@ -16,6 +10,7 @@ font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 4px 22px;
     border: 1px solid rgba(0, 0, 0, 0.25);
     border-radius: 5px;
+    z-index: 9991;
 }
 
 

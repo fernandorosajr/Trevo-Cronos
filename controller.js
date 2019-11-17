@@ -1,7 +1,9 @@
 $(document).ready(function () {
 
     const app = require('electron').remote.app;
-    const { remote } = require('electron');
+    const {
+        remote
+    } = require('electron');
 
     $('.btnCancel').click(function () {
         remote.BrowserWindow.getFocusedWindow().close();
@@ -35,11 +37,15 @@ $(document).ready(function () {
     });
 
     $('.voltas .volta').click(function () {
-        alert("wwww");
-        var ssss =  $('.modal_volta').show();
-     
+         if( $('.modal_volta').css('display') == 'none'){
+              $('.modal_volta').show()
+         }else{
+             
+              $('.modal_volta').hide();
+         }
+       
     });
-    
+
     $('.menu_balloon_popover x-menuitem').click(function () {
         var ss = $('.menu_balloon_popover').removeAttr("opened");
     });

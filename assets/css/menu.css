@@ -78,11 +78,6 @@ display: flex;
     z-index: 9999999;
 }
 
-.menu_ ul li:active{
-    color: #eee;
-    background-color: rgba(8, 84, 113, 0.7);;
-}
-
 
 .menu_ ul li ul {
     position: absolute;
