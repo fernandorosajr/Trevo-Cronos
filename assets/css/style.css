@@ -746,11 +746,14 @@ x-button[toggled].btn_config *{
     margin-top: 0px;
     border: 0px;
     border-bottom: 1px solid rgba(8,84,113,0.3);
-    color: rgba(8,84,113,0.7);
-    font-size: 14px;
+    color: rgba(8,84,113,0.7) !important;
+    font-size: 13px;
     text-align: center;
     text-transform: uppercase;
+    
 }
+
+
 
 x-button[expanded] {
     background: rgba(0, 0, 0, 0.0);
