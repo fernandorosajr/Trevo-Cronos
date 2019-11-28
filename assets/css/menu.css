@@ -136,7 +136,7 @@ display: flex;
     transform: rotate(135deg);
 }
 
-.menu_botton{ 
+.menu_bottom{ 
     display: flex;
     position: absolute;
     top: auto;
@@ -145,7 +145,7 @@ display: flex;
     margin-bottom: 80px;
 }
 
-.menu_botton:before { 
+.menu_bottom:before { 
   
 }
  .balao_dir:before{
