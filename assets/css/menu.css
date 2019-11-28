@@ -26,6 +26,13 @@ display: flex;
 
 }
 
+.btn_menu_sub:hover .menu_{
+    display: flex;
+    
+}
+
+
+
 .item_add_time:hover .sub_menu_ {
     display: flex;
 }
@@ -128,6 +135,33 @@ display: flex;
     z-index: 0;
     transform: rotate(135deg);
 }
+
+.menu_botton{ 
+    display: flex;
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    margin-bottom: 80px;
+}
+
+.menu_botton:before { 
+  
+}
+ .balao_dir:before{
+     
+
+    position: absolute;
+    top: auto;
+    bottom: 0px;
+    right: auto;
+    margin-bottom:-3px;
+     
+    box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
+    z-index: 0;
+    transform: rotate(225deg);
+} 
+
 .mostrar_item{
     display: flex;
     background-color: firebrick;
@@ -135,4 +169,9 @@ display: flex;
 
 .ocultar_item{
     display: none;
+}
+
+.btn-group > .btn:first-child {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
 }
