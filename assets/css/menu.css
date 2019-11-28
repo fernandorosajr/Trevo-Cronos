@@ -137,26 +137,22 @@ display: flex;
 }
 
 .menu_bottom{ 
-    display: flex;
+    display: none;
     position: absolute;
     top: auto;
     bottom: 0px;
-    right: auto;
-    margin-bottom: 80px;
+    right: 80px;
+    margin-bottom: 30px;
 }
 
-.menu_bottom:before { 
-  
-}
- .balao_dir:before{
+
+ .balao_bottom:before{
      
-
     position: absolute;
     top: auto;
     bottom: 0px;
     right: auto;
     margin-bottom:-3px;
-     
     box-shadow: rgba(0, 0, 0, 0.3) -1px -1px 0px;
     z-index: 0;
     transform: rotate(225deg);
@@ -171,7 +167,3 @@ display: flex;
     display: none;
 }
 
-.btn-group > .btn:first-child {
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-}
