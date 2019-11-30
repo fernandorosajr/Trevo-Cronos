@@ -558,10 +558,31 @@ x-button[toggled].btn_config * {
 
 
 .controles {
-    border: 0px solid black;
+    position:fixed;
+    border: 1px solid black;
     margin-left: 5px;
+    margin-top: 100px;
     padding-top: 10px;
-
+    top: 0;
+    bottom: 5px;
+    right: 4px;
+    left: 0px;
+    overflow:auto;
+    
+    height: auto;
+    overflow: auto;
+    opacity: 1;
+    display: block;
+    cursor: inherit;
+    box-sizing: border-box;
+    background: rgba(238, 238, 238, 0.3);
+   
+    
+    border: 0px solid #000;
+    border-radius: 0px 0px 0px 0px;
+    padding: 8px;
+    padding-top: 4px;
+    
     -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
 }
@@ -589,7 +610,7 @@ x-button[toggled].btn_config * {
     cursor: pointer;
 }
 
-.controles .controle x-label {
+.controles .controle label {
     font-size: 11px;
 }
 
@@ -621,17 +642,6 @@ x-button[toggled].btn_config * {
 .panel_list {
     box-sizing: border-box;
     flex: 2;
-    /*
-    box-shadow: 0px 0px 2px rgba(8,84,113,0.7);
-    +/
-    width: auto;
-    height: auto;
-    overflow: visible;
-    opacity: 1;
-    display: block;
- 
-    box-sizing: border-box;
-    /*background: #2448BE;*/
 
     padding: 8px;
     margin: 5px;
@@ -884,13 +894,7 @@ x-button[expanded] {
         transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+   
 }
 
 @media only screen and (min-width: 655px) and (max-width: 697px) {
@@ -939,13 +943,7 @@ x-button[expanded] {
         */
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+   
 }
 
 @media only screen and (max-width: 655px) and (min-width: 600px) {
@@ -987,13 +985,6 @@ x-button[expanded] {
         transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
 
     .voltas {
         max-width: 343px;
@@ -1073,13 +1064,7 @@ x-button[expanded] {
 
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+ 
 
     .voltas {
         max-width: 343px;
@@ -1166,13 +1151,7 @@ x-button[expanded] {
         display: none;
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+ 
 
     .voltas {
         max-width: 343px;
@@ -1262,13 +1241,7 @@ x-button[expanded] {
         display: none;
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
 
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
 
     .voltas {
         max-width: 343px;
@@ -1439,13 +1412,7 @@ x-button[expanded] {
         display: none;
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
 
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
 
     .voltas {
         max-width: 343px;
@@ -1615,13 +1582,7 @@ x-button[expanded] {
         display: none;
     }
 
-    .controles {
-        height: 290px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+   
 
     .voltas {
         max-width: 343px;
@@ -1677,24 +1638,12 @@ x-button[expanded] {
 /* HEIGHT */
 
 @media only screen and (min-height: 480px) and (max-height: 640px) {
-    .controles {
-        height: 130px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+   
 
 }
 
 @media only screen and (max-height: 480px) {
-    .controles {
-        height: 80px;
-        overflow: auto;
-
-        -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-        transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
-    }
+  
 
     .panel_center {
         display: block;

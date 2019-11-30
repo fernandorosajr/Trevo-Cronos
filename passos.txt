@@ -1,0 +1,2 @@
+E se eu transformasse a a barra direita de configuração em uma janela modal?
+Talvez, ao lado do botão configurações, colocar um botão chamado exibir listas.
