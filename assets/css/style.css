@@ -413,12 +413,29 @@ sidebar {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
+    
 
     -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
 
     margin: 0 10px;
     margin-top: 15px;
+}
+
+.barra_de_botoes_de_controles{
+    position:absolute;
+    
+    display: flex;
+     box-sizing: border-box;
+    justify-content: center;
+    
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    margin: 15px 10px;
+    
+    
 }
 
 x-button.btn {
@@ -564,7 +581,7 @@ x-button[toggled].btn_config * {
     margin-top: 100px;
     padding-top: 10px;
     top: 0;
-    bottom: 5px;
+    bottom: 55px;
     right: 4px;
     left: 0px;
     overflow:auto;
