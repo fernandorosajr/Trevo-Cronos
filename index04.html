@@ -170,6 +170,7 @@
             <div class="pane-group">
                 <div class="pane">
                     <div class="container">
+                        
                         <div class="panel_center">
                             <button class="btn_play">
                                 <span class="icon icon-play"></span>
@@ -253,6 +254,150 @@
                             </div>
                             <!-- FINAL DE Conteiner VOLTAS -->
                         </div>
+
+                        <!-- Inicio do Modal Configuração -->
+
+                        <div class="modal_config" style="display: none_">
+                            <div class="panel_config">
+                                <header>
+                                    <div class="label">
+                                        Pomodoro
+                                    </div>
+                                </header>
+                                <main>
+                                    <h4 class="label_2">Nome da volta:</h4>
+
+                                    <input type="text" class="txt_label" placeholder="Título da volta" />
+
+                                    <div class="controles">
+                                        <div class="controle">
+                                            <div class="box">
+                                                <input type="checkbox" id="sw_duracao_do_tempo" />
+                                                <div class="coluna">
+                                                    <label for="sw_duracao_do_tempo">
+                                                        <strong>
+                                                            Duração do tempo
+                                                        </strong>
+                                                    </label>
+                                                    <spam class="valor_da_duracao">25 min</spam>
+                                                </div>
+                                            </div>
+
+                                            <x-box>
+                                                <x-switch id="sw_duracao_do_tempo">
+
+                                                </x-switch>
+                                                <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
+                                                    <x-box vertical>
+                                                        <strong>
+                                                            Duração do tempo
+                                                        </strong>
+                                                        <span> 25 min</span>
+                                                    </x-box>
+                                                </x-label>
+                                            </x-box>
+
+                                        </div>
+
+                                        <div class="controle">
+                                            <x-box>
+                                                <x-switch id="sw_intervalo"></x-switch>
+
+                                                <x-label for="sw_intervalo" id="label_intervalo">
+                                                    <x-box vertical>
+                                                        <strong>Intervalo:</strong>
+                                                        <span>5m.</span>
+                                                    </x-box>
+                                                </x-label>
+                                            </x-box>
+                                        </div>
+
+                                        <div class="controle">
+                                            <x-box>
+                                                <x-switch id="sw_intervalo_longo"></x-switch>
+
+                                                <x-label for="sw_intervalo_longo" id="label_intervalo_longo">
+                                                    <x-box vertical>
+                                                        <strong>Intervalo longo</strong>
+                                                        <span>
+                                                            15min
+                                                        </span>
+                                                    </x-box>
+                                                </x-label>
+                                            </x-box>
+                                        </div>
+
+                                        <div class="controle">
+                                            <x-box>
+                                                <x-switch id="sw_numero_de_voltas"></x-switch>
+
+                                                <x-label for="sw_numero_de_voltas" id="label_numero_de_voltas">
+                                                    <x-box vertical>
+                                                        <strong>Número de voltas</strong>
+                                                        <span>3 voltas</span>
+                                                    </x-box>
+                                                </x-label>
+                                            </x-box>
+                                        </div>
+
+                                        <div class="controle">
+                                            <x-box>
+                                                <x-switch id="sw_alarme"></x-switch>
+
+                                                <x-label for="sw_alarme" id="label_alarme">
+                                                    <x-box vertical>
+                                                        <strong> Alarme</strong>
+                                                        <span>Tocar alarme ao término da volta</span>
+                                                    </x-box>
+                                                </x-label>
+                                            </x-box>
+                                        </div>
+
+                                        <div class="controle">
+                                            <x-box>
+                                                <x-switch id="sw_data_inicial"></x-switch>
+
+                                                <x-box vertical>
+
+                                                    <x-label for="sw_data_inicial" id="label_data_inicial">
+
+                                                        <x-box vertical>
+                                                            <strong>Dia e hora do início da volta</strong>
+                                                            <span>[01/07/2019] - [15:00] </span>
+                                                        </x-box>
+                                                    </x-label>
+                                                    <div class="datpe_time"><input type="date" />
+                                                        <span style="flex: 1"> - </span>
+                                                        <input type="time" id="appt" name="appt" required></div>
+                                                </x-box>
+
+                                            </x-box>
+                                        </div>
+
+                                        <div class="controle">
+                                            <x-box>
+                                                <x-switch id="sw_repeticao"></x-switch>
+                                                <x-label for="sw_repeticao" id="label_repeticao">
+                                                    <x-box vertical>
+                                                        <strong>Repetição</strong>
+                                                        <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
+                                                    </x-box>
+                                                </x-label>
+                                            </x-box>
+                                        </div>
+                                    </div>
+
+                                    <!-- Botões de Controles -->
+                                    <div class="barra_de_botoes_de_controles btn-group">
+                                        <button class="btn">Adicionar </button>
+                                        <button class="btn">Fechar </button>
+                                    </div>
+
+
+                                </main>
+                            </div>
+                        </div>
+                        <!-- Final de Modal Configuração -->
                     </div>
                 </div>
 
@@ -367,12 +512,12 @@
                         </main>
                     </div>
 
-                    <footer class="toolkbar btn-group_ toolbar-footer bottom_bar" >
+                    <footer class="toolkbar btn-group_ toolbar-footer bottom_bar">
                         <div class="toolbar-btn btn-group_">
                             <button class="btn btn_menu_sub">
                                 <span class="icon icon-plus-circled"></span>
                                 <span class="icon icon-down-open-big"></span>
-                                
+
 
                                 <div class="menu_balloon_popover menu_ menu_bottom">
                                     <ul class="balao balao_bottom">
@@ -438,149 +583,7 @@
             </section>
         </div>
 
-        <!-- Inicio do Modal Configuração -->
 
-        <div class="modal_config" style="display: none_">
-            <div class="panel_config">
-                <header>
-                    <div class="label">
-                        Pomodoro
-                    </div>
-                </header>
-                <main>
-                    <h4 class="label_2">Nome da volta:</h4>
-
-                    <input type="text" class="txt_label" placeholder="Título da volta" />
-
-                    <div class="controles">
-                        <div class="controle">
-                            <div class="box">
-                                <input type="checkbox" id="sw_duracao_do_tempo" />
-                                <div class="coluna">
-                                    <label for="sw_duracao_do_tempo">
-                                        <strong>
-                                            Duração do tempo
-                                        </strong>
-                                    </label>
-                                    <spam class="valor_da_duracao">25 min</spam>
-                                </div>
-                            </div>
-
-                            <x-box>
-                                <x-switch id="sw_duracao_do_tempo">
-
-                                </x-switch>
-                                <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
-                                    <x-box vertical>
-                                        <strong>
-                                            Duração do tempo
-                                        </strong>
-                                        <span> 25 min</span>
-                                    </x-box>
-                                </x-label>
-                            </x-box>
-
-                        </div>
-
-                        <div class="controle">
-                            <x-box>
-                                <x-switch id="sw_intervalo"></x-switch>
-
-                                <x-label for="sw_intervalo" id="label_intervalo">
-                                    <x-box vertical>
-                                        <strong>Intervalo:</strong>
-                                        <span>5m.</span>
-                                    </x-box>
-                                </x-label>
-                            </x-box>
-                        </div>
-
-                        <div class="controle">
-                            <x-box>
-                                <x-switch id="sw_intervalo_longo"></x-switch>
-
-                                <x-label for="sw_intervalo_longo" id="label_intervalo_longo">
-                                    <x-box vertical>
-                                        <strong>Intervalo longo</strong>
-                                        <span>
-                                            15min
-                                        </span>
-                                    </x-box>
-                                </x-label>
-                            </x-box>
-                        </div>
-
-                        <div class="controle">
-                            <x-box>
-                                <x-switch id="sw_numero_de_voltas"></x-switch>
-
-                                <x-label for="sw_numero_de_voltas" id="label_numero_de_voltas">
-                                    <x-box vertical>
-                                        <strong>Número de voltas</strong>
-                                        <span>3 voltas</span>
-                                    </x-box>
-                                </x-label>
-                            </x-box>
-                        </div>
-
-                        <div class="controle">
-                            <x-box>
-                                <x-switch id="sw_alarme"></x-switch>
-
-                                <x-label for="sw_alarme" id="label_alarme">
-                                    <x-box vertical>
-                                        <strong> Alarme</strong>
-                                        <span>Tocar alarme ao término da volta</span>
-                                    </x-box>
-                                </x-label>
-                            </x-box>
-                        </div>
-
-                        <div class="controle">
-                            <x-box>
-                                <x-switch id="sw_data_inicial"></x-switch>
-
-                                <x-box vertical>
-
-                                    <x-label for="sw_data_inicial" id="label_data_inicial">
-
-                                        <x-box vertical>
-                                            <strong>Dia e hora do início da volta</strong>
-                                            <span>[01/07/2019] - [15:00] </span>
-                                        </x-box>
-                                    </x-label>
-                                    <div class="datpe_time"><input type="date" />
-                                        <span style="flex: 1"> - </span>
-                                        <input type="time" id="appt" name="appt" required></div>
-                                </x-box>
-
-                            </x-box>
-                        </div>
-
-                        <div class="controle">
-                            <x-box>
-                                <x-switch id="sw_repeticao"></x-switch>
-                                <x-label for="sw_repeticao" id="label_repeticao">
-                                    <x-box vertical>
-                                        <strong>Repetição</strong>
-                                        <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
-                                    </x-box>
-                                </x-label>
-                            </x-box>
-                        </div>
-                    </div>
-
-                    <!-- Botões de Controles -->
-                    <div class="barra_de_botoes_de_controles btn-group">
-                        <button class="btn">Adicionar </button>
-                        <button class="btn">Fechar </button>
-                    </div>
-
-
-                </main>
-            </div>
-        </div>
-        <!-- Final de Modal Configuração -->
     </div>
 
 
