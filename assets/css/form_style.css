@@ -23,3 +23,73 @@
     top: 10px;
     z-index: 9;
 }
+
+/* Checkbox em Switch*/
+.switch{
+    position: absolute;
+    margin-left:-9999px;
+    visibility: hidden;
+    
+}
+
+.switch + div label{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    user-select: none;
+  
+   
+    
+}
+
+.switch--shadow + div label{
+    padding: 2px;
+    width: 38px;
+    height: 19px;
+    background-color:  #ddd;
+    border: 2px solid #c1c1c1;
+    border-radius: 19px;
+}
+
+.switch--shadow + div label:before,
+.switch--shadow + div label:after{
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    content: "";
+}
+
+.switch--shadow + div label:before{
+    right: 1px;
+    background-color: #c1c1c1;
+    border-radius: 19px;
+    transition: all 0.4s;
+}
+
+.switch--shadow + div label:after{
+   
+    width: 15px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
+}
+
+.switch--shadow:checked + div label:before{
+    background-color: rgba(79,132,152,0.7);
+    
+}
+
+.switch--shadow:checked + div label:after{
+    transform: translateX(18px);
+  
+}
+
+.switch--shadow:checked + div label{
+      border-color: #4f8498;
+     transition: all 0.4s;
+   
+}
