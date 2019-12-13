@@ -170,7 +170,7 @@
             <div class="pane-group">
                 <div class="pane">
                     <div class="container">
-                        
+
                         <div class="panel_center">
                             <button class="btn_play">
                                 <span class="icon icon-play"></span>
@@ -270,12 +270,14 @@
                                     <input type="text" class="txt_label" placeholder="Título da volta" />
 
                                     <div class="controles">
+
                                         <div class="controle">
                                             <div class="box">
-                                                <input type="checkbox" id="sw_duracao_do_tempo" class="switch switch--shadow" />
+                                                <input type="checkbox" id="sw_duracao_do_tempo"
+                                                    class="switch switch--shadow" />
                                                 <label for="sw_duracao_do_tempo"></label>
                                                 <div class="coluna">
-                                                    <label  class="visivel"  for="sw_duracao_do_tempo">
+                                                    <label class="visivel" for="sw_duracao_do_tempo">
                                                         <strong>
                                                             Duração do tempo
                                                         </strong>
@@ -283,108 +285,108 @@
                                                     <spam class="valor_da_duracao">25 min</spam>
                                                 </div>
                                             </div>
+                                        </div>
 
-                                            <x-box>
-                                                <x-switch id="sw_duracao_do_tempo">
-
-                                                </x-switch>
-                                                <x-label for="sw_duracao_do_tempo" id="label_duracao_do_tempo">
-                                                    <x-box vertical>
+                                        <div class="controle">
+                                            <div class="box">
+                                                <input type="checkbox" id="sw_intervalo"
+                                                    class="switch switch--shadow" />
+                                                <label for="sw_intervalo"></label>
+                                                <div class="coluna">
+                                                    <label class="visivel" for="sw_intervalo">
                                                         <strong>
-                                                            Duração do tempo
+                                                            Intervalo:
                                                         </strong>
-                                                        <span> 25 min</span>
-                                                    </x-box>
-                                                </x-label>
-                                            </x-box>
-
+                                                    </label>
+                                                    <spam class="valor_da_duracao">5m</spam>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="controle">
-                                            <x-box>
-                                                <x-switch id="sw_intervalo"></x-switch>
-
-                                                <x-label for="sw_intervalo" id="label_intervalo">
-                                                    <x-box vertical>
-                                                        <strong>Intervalo:</strong>
-                                                        <span>5m.</span>
-                                                    </x-box>
-                                                </x-label>
-                                            </x-box>
+                                            <div class="box">
+                                                <input type="checkbox" id="sw_intervalo_longo"
+                                                    class="switch switch--shadow" />
+                                                <label for="sw_intervalo_longo"></label>
+                                                <div class="coluna">
+                                                    <label class="visivel" for="sw_intervalo_longo">
+                                                        <strong>
+                                                            Intervalo longo:
+                                                        </strong>
+                                                    </label>
+                                                    <spam class="valor_da_duracao">15m</spam>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="controle">
-                                            <x-box>
-                                                <x-switch id="sw_intervalo_longo"></x-switch>
-
-                                                <x-label for="sw_intervalo_longo" id="label_intervalo_longo">
-                                                    <x-box vertical>
-                                                        <strong>Intervalo longo</strong>
-                                                        <span>
-                                                            15min
-                                                        </span>
-                                                    </x-box>
-                                                </x-label>
-                                            </x-box>
+                                            <div class="box">
+                                                <input type="checkbox" id="sw_numero_de_voltas"
+                                                    class="switch switch--shadow" />
+                                                <label for="sw_numero_de_voltas"></label>
+                                                <div class="coluna">
+                                                    <label class="visivel" for="sw_numero_de_voltas">
+                                                        <strong>
+                                                            Número de voltas:
+                                                        </strong>
+                                                    </label>
+                                                    <spam class="valor_da_duracao">3 voltas</spam>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="controle">
-                                            <x-box>
-                                                <x-switch id="sw_numero_de_voltas"></x-switch>
-
-                                                <x-label for="sw_numero_de_voltas" id="label_numero_de_voltas">
-                                                    <x-box vertical>
-                                                        <strong>Número de voltas</strong>
-                                                        <span>3 voltas</span>
-                                                    </x-box>
-                                                </x-label>
-                                            </x-box>
+                                            <div class="box">
+                                                <input type="checkbox" id="sw_alarme" class="switch switch--shadow" />
+                                                <label for="sw_alarme"></label>
+                                                <div class="coluna">
+                                                    <label class="visivel" for="sw_alarme">
+                                                        <strong>
+                                                            Alarme:
+                                                        </strong>
+                                                    </label>
+                                                    <spam class="valor_da_duracao">Tocar alarme ao término da volta
+                                                    </spam>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="controle">
-                                            <x-box>
-                                                <x-switch id="sw_alarme"></x-switch>
-
-                                                <x-label for="sw_alarme" id="label_alarme">
-                                                    <x-box vertical>
-                                                        <strong> Alarme</strong>
-                                                        <span>Tocar alarme ao término da volta</span>
-                                                    </x-box>
-                                                </x-label>
-                                            </x-box>
-                                        </div>
-
-                                        <div class="controle">
-                                            <x-box>
-                                                <x-switch id="sw_data_inicial"></x-switch>
-
-                                                <x-box vertical>
-
-                                                    <x-label for="sw_data_inicial" id="label_data_inicial">
-
-                                                        <x-box vertical>
-                                                            <strong>Dia e hora do início da volta</strong>
-                                                            <span>[01/07/2019] - [15:00] </span>
-                                                        </x-box>
-                                                    </x-label>
+                                            <div class="box">
+                                                <input type="checkbox" id="sw_data_inicial"
+                                                    class="switch switch--shadow" />
+                                                <label for="sw_data_inicial"></label>
+                                                <div class="coluna">
+                                                    <label class="visivel" for="sw_data_inicial">
+                                                        <strong>
+                                                            Dia e hora do início da volta </strong>
+                                                    </label>
+                                                    <spam class="valor_da_duracao">
+                                                        [01/07/2019] - [15:00]
+                                                    </spam>
                                                     <div class="datpe_time"><input type="date" />
                                                         <span style="flex: 1"> - </span>
-                                                        <input type="time" id="appt" name="appt" required></div>
-                                                </x-box>
-
-                                            </x-box>
+                                                        <input type="time" id="appt" name="appt" required>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
 
                                         <div class="controle">
-                                            <x-box>
-                                                <x-switch id="sw_repeticao"></x-switch>
-                                                <x-label for="sw_repeticao" id="label_repeticao">
-                                                    <x-box vertical>
-                                                        <strong>Repetição</strong>
-                                                        <span>[seg], [qua], [sex]. Até [02/jun/2019]</span>
-                                                    </x-box>
-                                                </x-label>
-                                            </x-box>
+                                            <div class="box">
+                                                <input type="checkbox" id="sw_repeticao"
+                                                    class="switch switch--shadow" />
+                                                <label for="sw_repeticao"></label>
+                                                <div class="coluna">
+                                                    <label class="visivel" for="sw_repeticao">
+                                                        <strong>
+                                                            Repetição: </strong>
+                                                    </label>
+                                                    <spam class="valor_da_duracao">
+                                                        [seg], [qua], [sex]. Até [02/jun/2019]
+                                                    </spam>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
 
@@ -393,7 +395,6 @@
                                         <button class="btn">Adicionar </button>
                                         <button class="btn">Fechar </button>
                                     </div>
-
 
                                 </main>
                             </div>
