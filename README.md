@@ -1,7 +1,7 @@
 # Trevo-Cronos
 Programa para contagem de tempo.
 
-## Tecnologia usadas:
+## Tecnologias usadas:
 
 - Electron (https://electronjs.org/);
 - Photon (http://photonkit.com/);
