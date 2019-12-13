@@ -30,37 +30,37 @@
 }
 
 .bottom_bar {
-    display:flex;
+    display: flex;
 }
 
-.bottom_bar .toolbar-btn{
-    display: flex; 
+.bottom_bar .toolbar-btn {
+    display: flex;
     flex-direction: row;
 }
 
-.toolbar-btn> .btn{
+.toolbar-btn>.btn {
     border-radius: 0;
     margin-left: 0;
     margin-right: 0;
-    
+
     border-left: 0;
 }
 
-.toolbar-btn> .btn:last-child{
+.toolbar-btn>.btn:last-child {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
-    
-     border-top-right-radius: 5px;
+
+    border-top-right-radius: 5px;
     border-bottom-right-radius: 5px;
 }
 
-.toolbar-btn> .btn:first-child {
-   
+.toolbar-btn>.btn:first-child {
+
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
-    
+
     border-left: 1px solid;
 }
 
@@ -413,7 +413,7 @@ sidebar {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
-    
+
 
     -webkit-transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
     transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
@@ -422,20 +422,20 @@ sidebar {
     margin-top: 15px;
 }
 
-.barra_de_botoes_de_controles{
-    position:absolute;
-    
+.barra_de_botoes_de_controles {
+    position: absolute;
+
     display: flex;
-     box-sizing: border-box;
+    box-sizing: border-box;
     justify-content: center;
-    
+
     bottom: 0;
     left: 0;
     right: 0;
-    
+
     margin: 15px 10px;
-    
-    
+
+
 }
 
 x-button.btn {
@@ -833,7 +833,7 @@ x-button[expanded] {
         transition: 0.5s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);
     }
 
-   
+
 }
 
 @media only screen and (min-width: 655px) and (max-width: 697px) {
@@ -882,7 +882,7 @@ x-button[expanded] {
         */
     }
 
-   
+
 }
 
 @media only screen and (max-width: 655px) and (min-width: 600px) {
@@ -1003,7 +1003,7 @@ x-button[expanded] {
 
     }
 
- 
+
 
     .voltas {
         max-width: 343px;
@@ -1090,7 +1090,7 @@ x-button[expanded] {
         display: none;
     }
 
- 
+
 
     .voltas {
         max-width: 343px;
@@ -1521,7 +1521,7 @@ x-button[expanded] {
         display: none;
     }
 
-   
+
 
     .voltas {
         max-width: 343px;
@@ -1576,13 +1576,10 @@ x-button[expanded] {
 
 /* HEIGHT */
 
-@media only screen and (min-height: 480px) and (max-height: 640px) {
-   
-
-}
+@media only screen and (min-height: 480px) and (max-height: 640px) {}
 
 @media only screen and (max-height: 480px) {
-  
+
 
     .panel_center {
         display: block;
