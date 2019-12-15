@@ -197,3 +197,18 @@ https://willianjusten.com.br/criando-um-switch-button-com-css/
      transition: all 0.4s;
    
 }
+
+.label select{
+    background-color: #eee;
+    border: 0;
+    text-transform:uppercase;
+    text-align: center;
+    min-width: 150px;
+   
+}
+
+.label select option{
+    text-transform: capitalize;
+    background-color: #fff;   
+}
+
