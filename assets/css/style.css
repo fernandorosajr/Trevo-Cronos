@@ -573,7 +573,6 @@ x-button[toggled].btn_config * {
     border: none;
 }
 
-
 .date_time {
     display: flex;
 }
@@ -696,8 +695,10 @@ x-button[toggled].btn_config * {
     padding: 7px;
     margin: 4px;
     border: 2px solid rgba(8, 84, 113, 0.7);
+    
     color: rgba(8, 84, 113, 0.7);
     width: 98%;
+    
     background-color: rgba(255, 255, 255, 0.4) !important;
 
     transition: 0.3s 0.1s all cubic-bezier(0.25, 0.1, 0.25, 1);

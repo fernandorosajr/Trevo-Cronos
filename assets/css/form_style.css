@@ -11,6 +11,27 @@
     align-content: center;
     justify-content: center;
     font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    z-index: 99999;
+    
+}
+
+.btn_listas{
+    position: absolute;
+    top: 4px;
+    right: 40px;
+    background-color: transparent;
+    border: none;
+    width: 30px;
+    height: 30px;
+    padding-left: 5px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    z-index: 99999;
+}
+.btn_listas .icon{
+    font-size: 17px;
     
 }
 
@@ -33,10 +54,13 @@
     margin-left: 5px;
     margin-top: 100px;
     padding-top: 10px;
+   
     top: 0;
     bottom: 55px;
-    right: 4px;
+    right: 15px;
     left: 0px;
+    
+    
     overflow:auto;
     
     height: auto;
@@ -204,11 +228,15 @@ https://willianjusten.com.br/criando-um-switch-button-com-css/
     text-transform:uppercase;
     text-align: center;
     min-width: 150px;
-   
+  
+    /*-webkit-appearance: none;
+    -moz-appearance: none;*/   
 }
 
 .label select option{
     text-transform: capitalize;
     background-color: #fff;   
 }
+
+
 
